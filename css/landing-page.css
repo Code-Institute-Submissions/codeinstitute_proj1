@@ -1,0 +1,44 @@
+* {
+    /* border: 1px solid black; */
+    color: var(--pink)
+}
+
+html { 
+    background: url("/img/background.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+body {
+    background-color: var(--blue);
+    border-left: 5px var(--pink) dashed;
+    border-right: 5px var(--lime) dashed;
+    padding: 1%;
+}
+
+#logo {
+    background-color: white;
+}
+
+#mattermost-button {
+    background-color: #1e325c;
+    color: white;
+
+}
+
+#facebook-button {
+    background-color: #4267B2;
+    color: white;
+}
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1000;
+    opacity: 1;
+}

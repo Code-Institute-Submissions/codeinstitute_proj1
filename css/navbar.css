@@ -1,0 +1,8 @@
+#navigation-bar ul li a {
+    text-decoration: none;
+    color: var(--green);
+    font-weight: bolder;
+    background-color: var(--lime);
+    margin: 5px;
+    border-radius: 5px;
+}
