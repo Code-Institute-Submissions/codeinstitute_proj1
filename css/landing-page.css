@@ -1,6 +1,7 @@
 * {
     /* border: 1px solid black; */
-    color: var(--pink)
+    color: var(--pink);
+    box-sizing:border-box;
 }
 
 html { 
@@ -15,9 +16,13 @@ body {
     background-color: var(--blue);
     border-left: 5px var(--pink) dashed;
     border-right: 5px var(--lime) dashed;
-    padding: 1%;
+    min-height: 300vh;
 }
 
+#navbar-logo {
+    width: 50px;
+    height: 50px;
+}
 #logo {
     background-color: white;
 }
@@ -41,4 +46,23 @@ body {
     min-height: 100%;
     z-index: -1000;
     opacity: 1;
+}
+
+.descriptor-buttons {
+    border: 0;
+    border-radius: 0;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#intro-button {
+    background-color: var(--lime);
+}
+
+#history-button {
+    background-color: var(--green);
+}
+
+#what-we-do-button {
+    background-color: var(--yellow);
 }
