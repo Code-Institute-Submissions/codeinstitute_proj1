@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
         <!-- Custom CSS -->
-        <link href="css/color-theme.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
         <link href="css/landing-page.css" rel="stylesheet" type="text/css">
         <link href="css/navbar.css" rel="stylesheet" type="text/css">
 
@@ -25,7 +25,7 @@
         <title>Inkwell Shards | Dublin Writer's Club</title>
     </head>
 
-    <body class="container-fluid col-12 col-sm-10 col-md-8 p-0">
+    <body class="container-fluid col-12 col-sm-10 col-md-8 px-0">
 
         <!-- Bootstrap Navigation bar -->
         <nav class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
@@ -48,11 +48,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item active"><a class="nav-link" href="/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/index.html">Members</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/index.html">Notable Works</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/index.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">Books for sale</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/index.html">Submit literature</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/members.html">Members</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/works.html">Notable Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/shop.html">Books for sale</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/submit.html">Submit literature</a></li>
                 </ul>
                 <!-- Social buttons for the large navbar, visible only on large displays -->
                 <ul class="navbar-nav mx-2 d-none d-xxl-flex">
@@ -64,16 +64,16 @@
             </div>
           </nav>
         
-        <header class="container pt-4">
+        <header class="container pt-4 px-5">
 
-            <div class="row px-5">
+            <div class="row">
 
                 <div class="col-8 my-auto">
                     <h1>Inkwell Shards</h1>
                     <small>Dublin literary club, opened to all new, talented and interested writers living in the Dublin area. We accept submission of all kinds, from poetry, to drama, to TikToks. Meeting monthly on <span><i class="bi bi-camera-video"></i> , via Zoom!</span></small>
                 </div>
 
-                <div class="col-3 mx-auto my-auto bg-dark border py-2 text-center">
+                <div class="col-3 mx-auto my-auto bg-dark rounded py-2 text-center">
                     <small>Next meeting:</small>
                     <small>28th of June, 2022 | 18:00</small>
                     <small>RDS Building, D08 RX84</small><br>
@@ -86,7 +86,7 @@
             <hr class="mt-4"> 
         </header>
 
-        <section id="main-landing-section" class="container pt-5">
+        <section id="main-landing-section" class="container pt-5 pb-5">
 
             <!-- A quote about the power of literature -->
             <div class="row mt-4 align-items-center">
@@ -109,20 +109,19 @@
                 </div>
             </div>
 
-            
-
+            <!-- A row with a brief introduction / history / purpose and a side column with the latest news -->
             <div class="row mt-5">
 
                 <div class="col m-2">
 
-                    <div class="row justify-content-start px-5">
-                        <button id="intro-button" class="btn btn-info col-4 py-5 descriptor-buttons">Introduction</button>
-                        <button id="history-button" class="btn btn-info col-4 py-5 descriptor-buttons">Short History</button>
-                        <button id="what-we-do-button" class="btn btn-info col-4 py-5 descriptor-buttons">What We Do</button>
+                    <div class="row justify-content-center px-5">
+                        <button id="intro-button" class="btn btn-info col-5 descriptor-buttons">Introduction</button>
+                        <button id="history-button" class="btn btn-info col-3 descriptor-buttons">Short History</button>
+                        <button id="what-we-do-button" class="btn btn-info col-4 descriptor-buttons">What We Do</button>
 
                     </div>
 
-                    <div id="intro-wrapper" class="d-block">
+                    <div id="intro-wrapper" class="d-block col-8 me-auto">
 
                         <p class="row p-5 text-justify">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lorem at nibh sollicitudin ornare. Aliquam vel urna lectus. 
@@ -142,24 +141,65 @@
 
                     </div>
 
+                    <div id="history-wrapper" class="d-none col-12 col-md-8 mx-auto">
+
+                        <p class="row p-5 text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lorem at nibh sollicitudin ornare. Aliquam vel urna lectus. 
+                            Pellentesque eu orci convallis, fermentum nunc vitae, suscipit ligula. Praesent eu tristique risus, gravida viverra sem. Nam sed 
+                            convallis velit, vel eleifend dui. Sed bibendum sagittis pellentesque. Fusce vitae laoreet elit. Mauris congue, orci ac pellentesque 
+                            consequat, metus quam viverra nisl, et ornare augue felis et sem. Nunc eget mauris ante. Curabitur consectetur est a dapibus 
+                            consectetur. Duis sed ipsum sit amet ligula aliquet vestibulum. Aliquam leo eros, fermentum non bibendum eu, tempor et nibh.     
+                        </p>
+
+                        <p class="row px-5 text-center">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lorem at nibh sollicitudin ornare. Aliquam vel urna lectus. 
+                            Pellentesque eu orci convallis, fermentum nunc vitae, suscipit ligula. Praesent eu tristique risus, gravida viverra sem. Nam sed 
+                            convallis velit, vel eleifend dui. Sed bibendum sagittis pellentesque. Fusce vitae laoreet elit. Mauris congue, orci ac pellentesque 
+                            consequat, metus quam viverra nisl, et ornare augue felis et sem. Nunc eget mauris ante. Curabitur consectetur est a dapibus 
+                            consectetur. Duis sed ipsum sit amet ligula aliquet vestibulum. Aliquam leo eros, fermentum non bibendum eu, tempor et nibh.     
+                        </p>
+
+                    </div>
+
+                    <div id="what-we-do-wrapper" class="d-none col-12 col-md-8 ms-auto">
+
+                        <p class="row p-5 text-end">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lorem at nibh sollicitudin ornare. Aliquam vel urna lectus. 
+                            Pellentesque eu orci convallis, fermentum nunc vitae, suscipit ligula. Praesent eu tristique risus, gravida viverra sem. Nam sed 
+                            convallis velit, vel eleifend dui. Sed bibendum sagittis pellentesque. Fusce vitae laoreet elit. Mauris congue, orci ac pellentesque 
+                            consequat, metus quam viverra nisl, et ornare augue felis et sem. Nunc eget mauris ante. Curabitur consectetur est a dapibus 
+                            consectetur. Duis sed ipsum sit amet ligula aliquet vestibulum. Aliquam leo eros, fermentum non bibendum eu, tempor et nibh.     
+                        </p>
+
+                        <p class="row px-5 text-end">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lorem at nibh sollicitudin ornare. Aliquam vel urna lectus. 
+                            Pellentesque eu orci convallis, fermentum nunc vitae, suscipit ligula. Praesent eu tristique risus, gravida viverra sem. Nam sed 
+                            convallis velit, vel eleifend dui. Sed bibendum sagittis pellentesque. Fusce vitae laoreet elit. Mauris congue, orci ac pellentesque 
+                            consequat, metus quam viverra nisl, et ornare augue felis et sem. Nunc eget mauris ante. Curabitur consectetur est a dapibus 
+                            consectetur. Duis sed ipsum sit amet ligula aliquet vestibulum. Aliquam leo eros, fermentum non bibendum eu, tempor et nibh.     
+                        </p>
+
+                    </div>
                 </div>
 
-
-
-                <div class="col-3 d-none border m-2 p-3 rounded">
-                    <h3>Latest Events</h3>
-                    <h5>Awards ceromony held at Gresham Hotel</h6>
+                <aside class="col-3 border m-2 p-3 rounded">
+                    <h3>Latest News</h3>
+                    <h5 class="mt-4">Awards ceromony held at Gresham Hotel</h6>
                     <small>26th of January, 2022</small>
                     <p>Yesterday evening, at the Gresham Hotel, something important definitely happened, but unforunately, I was not there as I was procrastinating and avoided doing this project until today, 2nd of May. Jeeeeeesus.</p>
                     <hr>
                     <h5>Nobel Award in Literature</h5>
                     <small>23rd of October</small>
                     <p>Samuel Beckett wins the Nobel award in Literature "for his writing, which - in new forms for the novel and drama - in the destitution of modern man acquires its elevation."</p>
-                </div>
+                </aside>
 
             </div>
 
         </section>
+
+        <footer id="main-footer" class="row container sticky-bottom m-0">
+            <p class="text-center my-auto py-3">Inkwell Shards | All rights reserved</p>
+        </footer>
 
 
 
@@ -170,5 +210,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    </body>
+    
+    <!-- Custom scripts -->
+    <script src="/js/landing-page.js"></script>
+</body>
 </html>

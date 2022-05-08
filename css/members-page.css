@@ -1,0 +1,14 @@
+.member-photo {
+    width: 60px;
+    height: 60px;
+}
+
+#member-button {
+    background-color: var(--pink);
+    color: var(--blue);
+    font-weight: bolder;
+}
+
+.modal-text {
+    color: var(--blue)
+}

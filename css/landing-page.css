@@ -1,41 +1,10 @@
-* {
-    /* border: 1px solid black; */
-    color: var(--pink);
-    box-sizing:border-box;
-}
 
-html { 
-    background: url("/img/background.png") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
 
-body {
-    background-color: var(--blue);
-    border-left: 5px var(--pink) dashed;
-    border-right: 5px var(--lime) dashed;
-    min-height: 300vh;
-}
+/* Left in here in case we need a video as background. 
+A new video HTML element will need to be added too */
 
-#navbar-logo {
-    width: 50px;
-    height: 50px;
-}
-#logo {
-    background-color: white;
-}
-
-#mattermost-button {
-    background-color: #1e325c;
-    color: white;
-
-}
-
-#facebook-button {
-    background-color: #4267B2;
-    color: white;
+#main-landing-section {
+    min-height: 100vh;
 }
 
 #background-video {
@@ -66,3 +35,4 @@ body {
 #what-we-do-button {
     background-color: var(--yellow);
 }
+
