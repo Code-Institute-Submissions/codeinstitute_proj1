@@ -15,6 +15,7 @@
         <!-- Custom CSS -->
         <link href="css/main.css" rel="stylesheet" type="text/css">
         <link href="css/navbar.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/submit.css" type="text/css">
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,7 +73,7 @@
                     <small>Dublin literary club, opened to all new, talented and interested writers living in the Dublin area. We accept submission of all kinds, from poetry, to drama, to TikToks. Meeting monthly on <span><i class="bi bi-camera-video"></i> , via Zoom!</span></small>
                 </div>
 
-                <div class="col-3 mx-auto my-auto bg-dark border py-2 text-center">
+                <div id="announcement-top" class="col-3 mx-auto my-auto bg-dark py-2 text-center">
                     <small>Next meeting:</small>
                     <small>28th of June, 2022 | 18:00</small>
                     <small>RDS Building, D08 RX84</small><br>
@@ -83,7 +84,41 @@
             <hr class="mt-4"> 
         </header>
 
-        <section id="<>SECTION ID<>" class="container p-5">
+        <section id="main-submit-section" class="container p-5">
+
+            <!-- Bootstrap Form -->
+            <form>
+                <div class="col-12 col-md-5 mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="submit-name" aria-describedby="emailHelp">
+                </div>
+
+                <div class="col-12 col-md-5 mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="submit-email">
+                </div>
+
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+
+                <div class="col-12 col-md-6 mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Paste your text here</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="20" maxlength="2000" placeholder="2000 characters maximum" ></textarea>
+                </div>
+
+                <p>or...</p>
+
+                <div class="col-12 col-md-6 mb-3">
+                    <label for="formFile" class="form-label">Upload your text</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+
+
 
         </section>
 

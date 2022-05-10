@@ -39,7 +39,7 @@ function show_introduction() {
 
     what_we_do_button.addEventListener("click", function() {
         
-        intro_wrapper.classList.add("d-block");
+        intro_wrapper.classList.add("d-none");
         intro_wrapper.classList.remove("d-block");
 
         history_wrapper.classList.add("d-none");

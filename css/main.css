@@ -35,3 +35,7 @@ body {
 .bold-text {
     font-weight: bold;
 }
+
+#announcement-top {
+    border-radius: 15px 15px 30px 5px;
+}
