@@ -30,59 +30,66 @@
         <!-- Bootstrap Navigation bar -->
         <nav class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
         
-                <a class="navbar-brand m-2 my-auto align-middle" href="/index.html">
-                    <img src="/img/logo.png" id="navbar-logo"/> Inkwell Shards
-                </a>
-                <!-- Social buttons, visible only on smaller sizes -->
-                <ul class="navbar-nav d-xxl-none d-flex ms-auto">
-                    <li class="nav-item">
-                        <button id="mattermost-button" class="btn mx-2 px-3"><i class="bi bi-slack"></i></button>
-                        <button id="facebook-button" class="btn mx-2 px-3"><i class="bi bi-facebook"></i></button></li>
-                </ul>
-                <button class="navbar-toggler mx-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
+            <a class="navbar-brand m-2 my-auto align-middle" href="/index.html">
+                <img src="/img/logo.png" id="navbar-logo"/> <span class="d-none d-md-inline">Inkwell Shards</span>
+            </a>
+            <!-- Social buttons, visible only on smaller sizes -->
+            <ul class="navbar-nav d-xxl-none">
+                <li class="nav-item">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <button id="mattermost-button" class="btn mx-3 px-3"><i class="bi bi-slack"></i></button>
+                    <button id="facebook-button" class="btn me-4 px-3"><i class="bi bi-facebook"></i></button>
+
+                </li>
+            </ul>
 
 
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/members.html">Members</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/works.html">Notable Works</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/shop.html">Books for sale</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/submit.html">Submit literature</a></li>
-                </ul>
-                <!-- Social buttons for the large navbar, visible only on large displays -->
-                <ul class="navbar-nav mx-2 d-none d-xxl-flex">
-                    <li class="nav-item"><button id="mattermost-button" class="btn mx-2 px-3"><i class="bi bi-slack"></i></button></li>
-                    <li class="nav-item"><button id="facebook-button" class="btn mx-2 px-3"><i class="bi bi-facebook"></i></button></li>
-                </ul>
 
-              </ul>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto d-flex align-items-center">
+                <li class="nav-item active"><a class="nav-link" href="/index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/members.html">Members</a></li>
+                <li class="nav-item"><a class="nav-link" href="/works.html">Notable Works</a></li>
+                <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="/shop.html">Books for sale</a></li>
+                <li class="nav-item"><a class="nav-link" href="/submit.html">Submit literature</a></li>
+            </ul>
+
+            <!-- Social buttons for the large navbar, visible only on large displays -->
+            <ul class="navbar-nav mx-2 d-none d-xxl-flex">
+                <li class="nav-item"><button id="mattermost-button" class="btn mx-2 px-3"><i class="bi bi-slack"></i></button></li>
+                <li class="nav-item"><button id="facebook-button" class="btn mx-2 px-3"><i class="bi bi-facebook"></i></button></li>
+            </ul>
+
+          </ul>
+        </div>
+      </nav>
+    
+    <header class="container pt-4 px-2 px-xl-5">
+
+        <div class="row p-4 p-md-4">
+
+            <div class="col-12 col-md-8 col-xl-9 my-auto">
+                <h1>Inkwell Shards</h1>
+                <small>Dublin literary club, opened to all new, talented and interested writers living in the Dublin area. We accept submission 
+                    of all kinds, from poetry, to drama, to TikToks. Meeting monthly, in person and on <span><i class="bi bi-camera-video"></i> , via Zoom!</span></small>
             </div>
-        </nav>
-        
-        <header class="container pt-4 px-5">
 
-            <div class="row">
-
-                <div class="col-8 my-auto">
-                    <h1>Inkwell Shards</h1>
-                    <small>Dublin literary club, opened to all new, talented and interested writers living in the Dublin area. We accept submission of all kinds, from poetry, to drama, to TikToks. Meeting monthly on <span><i class="bi bi-camera-video"></i> , via Zoom!</span></small>
-                </div>
-
-                <div id="announcement-top" class="col-3 mx-auto my-auto bg-dark py-2 text-center">
-                    <small>Next meeting:</small>
-                    <small>28th of June, 2022 | 18:00</small>
-                    <small>RDS Building, D08 RX84</small><br>
-                    <small><a href="">Book here!</a></small> | <a href="">Or... <i class="bi bi-camera-video"></i></a>
-                </div>
-
+            <div id="announcement-top" class="col-10 col-md-4 col-xl-3 mt-3 mt-md-auto mx-auto my-auto bg-dark py-2 text-center">
+                <small>Next meeting:</small>
+                <small>28th of June, 2022 | 18:00</small>
+                <small>RDS Building, D08 RX84</small><br>
+                <small><a href="">Book here!</a></small> | <a href=""><i class="bi bi-camera-video"></i></a>
             </div>
-            <hr class="mt-4"> 
-        </header>
+
+
+            
+        </div>
+        <hr class="mt-4"> 
+    </header>
 
         <section id="main-submit-section" class="container p-5">
 
