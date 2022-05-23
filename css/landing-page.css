@@ -36,3 +36,9 @@ A new video HTML element will need to be added too */
     background-color: var(--yellow);
 }
 
+header a {
+    color: whitesmoke
+}
+
+
+
