@@ -12,12 +12,13 @@
         <!-- Bootstrap Icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/normalize.css" type="text/css">
-        <link href="css/members-page.css" rel="stylesheet" type="text/css">
-        <link href="css/navbar.css" rel="stylesheet" type="text/css">
-        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <!-- Sitewide custom CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/navbar.css">
 
+        <!-- Page specific CSS -->
+        <link href="css/members-page.css" rel="stylesheet">
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,7 +74,7 @@
         <header class="container px-auto px-md-4 px-xl-5">
             <div class="row">
 
-                <div class="col-12 col-md-8 col-xl-9 my-auto mx-auto">
+                <div class="col-12 col-md-8 col-xl-9 mb-3 my-auto mx-auto">
                     <h1>Inkwell Shards</h1>
                     <h6>Dublin literary club, opened to all new, talented and interested writers living in the Dublin area. We accept submission 
                         of all kinds, from poetry, to drama, to TikToks. Meeting monthly, in person and via Zoom <span><i class="bi bi-camera-video"></i></span></h6>
@@ -89,25 +90,26 @@
             </div>
         </header>
 
-    <hr>
+        <hr>
 
-        <section id="main-members-section" class="container p-5">
+        <section id="main-members-section" class="container px-auto px-md-4 px-xl-5">
 
             <div class="row">
                 <h2 class="text-start">Members</h2>
             </div>
             <div class="row">
-                <h4>We would like to thank the following for being dedicated members of our club and for writing and creating and putting together 
+                <p>We would like to thank the following for being dedicated members of our club and for writing and creating and putting together 
                     some of the most appreciated pieces of Irish literature of the last 20 years. 
-                </h4>
+                </p>
             </div>
 
-            <table class="table mt-5">
+            <table class="table">
                 <thead>
                   <tr>
                     <th scope="col">Picture</th>
                     <th scope="col">Name</th>
-                    <th scope="col">Contributions</th>
+                    <!-- Contributions column will be hidden on smaller devices -->
+                    <th scope="col" class=" d-none d-md-table-cell">Contributions</th>
                     <th scope="col">Contact</th>
                   </tr>
                 </thead>
@@ -120,14 +122,13 @@
                     <td>
                         <p>Rabindranath Tagore</p>
                     </td>
-                    <td>
+                    <td class="d-none d-md-table-cell">
                         Rabindranath Tagore; 7 May 1861 – 7 August 1941) was a 
                         Bengali polymath who worked as a poet, writer, playwright, composer, philosopher, social reformer and painter.
                     </td>
                     <td>
                         <span><a href="mailto: email@email.com" target="_blank"><i class="bi bi-envelope"></i></a></span>
                         <span class="mx-2"><a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></span>
-
                     </td>
                   </tr>
 
@@ -138,14 +139,13 @@
                     <td>
                         <p>Rabindranath Tagore</p>
                     </td>
-                    <td>
+                    <td class="d-none d-md-table-cell">
                         Rabindranath Tagore; 7 May 1861 – 7 August 1941) was a 
                         Bengali polymath who worked as a poet, writer, playwright, composer, philosopher, social reformer and painter.
                     </td>
                     <td>
                         <span><a href="mailto: email@email.com" target="_blank"><i class="bi bi-envelope"></i></a></span>
                         <span class="mx-2"><a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></span>
-
                     </td>
                   </tr>
 
@@ -156,14 +156,13 @@
                     <td>
                         <p>Rabindranath Tagore</p>
                     </td>
-                    <td>
+                    <td class="d-none d-md-table-cell">
                         Rabindranath Tagore; 7 May 1861 – 7 August 1941) was a 
                         Bengali polymath who worked as a poet, writer, playwright, composer, philosopher, social reformer and painter.
                     </td>
                     <td>
                         <span><a href="mailto: email@email.com" target="_blank"><i class="bi bi-envelope"></i></a></span>
                         <span class="mx-2"><a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></span>
-
                     </td>
                   </tr>
 
@@ -174,71 +173,15 @@
                     <td>
                         <p>Rabindranath Tagore</p>
                     </td>
-                    <td>
+                    <td class="d-none d-md-table-cell">
                         Rabindranath Tagore; 7 May 1861 – 7 August 1941) was a 
                         Bengali polymath who worked as a poet, writer, playwright, composer, philosopher, social reformer and painter.
                     </td>
                     <td>
                         <span><a href="mailto: email@email.com" target="_blank"><i class="bi bi-envelope"></i></a></span>
                         <span class="mx-2"><a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></span>
-
                     </td>
                   </tr>
-
-                  <tr>
-                    <td>
-                        <img src="/img/members/1.jpg" class="img-fluid member-photo" />
-                    </td>
-                    <td>
-                        <p>Rabindranath Tagore</p>
-                    </td>
-                    <td>
-                        Rabindranath Tagore; 7 May 1861 – 7 August 1941) was a 
-                        Bengali polymath who worked as a poet, writer, playwright, composer, philosopher, social reformer and painter.
-                    </td>
-                    <td>
-                        <span><a href="mailto: email@email.com" target="_blank"><i class="bi bi-envelope"></i></a></span>
-                        <span class="mx-2"><a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></span>
-
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                        <img src="/img/members/1.jpg" class="img-fluid member-photo" />
-                    </td>
-                    <td>
-                        <p>Rabindranath Tagore</p>
-                    </td>
-                    <td>
-                        Rabindranath Tagore; 7 May 1861 – 7 August 1941) was a 
-                        Bengali polymath who worked as a poet, writer, playwright, composer, philosopher, social reformer and painter.
-                    </td>
-                    <td>
-                        <span><a href="mailto: email@email.com" target="_blank"><i class="bi bi-envelope"></i></a></span>
-                        <span class="mx-2"><a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></span>
-
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                        <img src="/img/members/1.jpg" class="img-fluid member-photo" />
-                    </td>
-                    <td>
-                        <p>Rabindranath Tagore</p>
-                    </td>
-                    <td>
-                        Rabindranath Tagore; 7 May 1861 – 7 August 1941) was a 
-                        Bengali polymath who worked as a poet, writer, playwright, composer, philosopher, social reformer and painter.
-                    </td>
-                    <td>
-                        <span><a href="mailto: email@email.com" target="_blank"><i class="bi bi-envelope"></i></a></span>
-                        <span class="mx-2"><a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></span>
-
-                    </td>
-                  </tr>
-
                 </tbody>
               </table>
 
@@ -246,7 +189,7 @@
                 <!-- Modal code copied from the Bootstrap documentation, available here: 
                 https://getbootstrap.com/docs/5.0/components/modal/ 
                 Modified as required -->
-                <button id="member-button" type="button" class="btn col-4 mx-auto my-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button id="member-button" type="button" class="btn col-6 col-md-5 col-xl-4 mx-auto my-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     How to become a member?
                 </button>
                 
@@ -274,7 +217,7 @@
         </section>
 
 
-        <footer id="main-footer" class="row container sticky-bottom p-0 m-0">
+        <footer id="main-footer" class="container sticky-bottom">
             <p class="text-center my-auto py-3">Inkwell Shards | All rights reserved</p>
         </footer>
 

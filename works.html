@@ -12,10 +12,13 @@
         <!-- Bootstrap Icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
-        <!-- Custom CSS -->
-        <link href="css/main.css" rel="stylesheet" type="text/css">
-        <link href="css/navbar.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="css/works.css" type="text/css">
+        <!-- Sitewide custom CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/navbar.css">
+
+        <!-- Page specific CSS -->
+        <link href="css/works.css" rel="stylesheet">
 
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,12 +28,14 @@
         <title>Inkwell Shards | Dublin Writer's Club</title>
     </head>
 
-    <body class="container-fluid col-12 col-sm-10 col-md-8 p-0">
+    <body class="container-fluid px-0 col-sm-11 col-md-10 col-xl-9 col-xxl-8">
+
+        <!-- Bootstrap Navigation bar -->
 
         <!-- Bootstrap Navigation bar -->
         <nav class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
         
-            <a class="navbar-brand m-2 my-auto align-middle" href="/index.html">
+            <a class="navbar-brand m-2 my-auto" href="/index.html">
                 <img src="/img/logo.png" id="navbar-logo"/> <span class="d-none d-md-inline">Inkwell Shards</span>
             </a>
             <!-- Social buttons, visible only on smaller sizes -->
@@ -45,9 +50,6 @@
                 </li>
             </ul>
 
-
-
-      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto d-flex align-items-center">
                 <li class="nav-item active"><a class="nav-link" href="/index.html">Home</a></li>
@@ -68,39 +70,39 @@
         </div>
       </nav>
     
-    <header class="container pt-4 px-2 px-xl-5">
+    <!-- The header of the page, where a description is listed, together with an "announcements"
+    board. The links here will lead the user to a booking page where they can reserve a seat at
+    the next club's meeting -->
+    <header class="container px-auto px-md-4 px-xl-5">
+        <div class="row">
 
-        <div class="row p-4 p-md-4">
-
-            <div class="col-12 col-md-8 col-xl-9 my-auto">
+            <div class="col-12 col-md-8 col-xl-9 mb-3 my-auto mx-auto">
                 <h1>Inkwell Shards</h1>
-                <small>Dublin literary club, opened to all new, talented and interested writers living in the Dublin area. We accept submission 
-                    of all kinds, from poetry, to drama, to TikToks. Meeting monthly, in person and on <span><i class="bi bi-camera-video"></i> , via Zoom!</span></small>
+                <h6>Dublin literary club, opened to all new, talented and interested writers living in the Dublin area. We accept submission 
+                    of all kinds, from poetry, to drama, to TikToks. Meeting monthly, in person and via Zoom <span><i class="bi bi-camera-video"></i></span></h6>
             </div>
 
-            <div id="announcement-top" class="col-10 col-md-4 col-xl-3 mt-3 mt-md-auto mx-auto my-auto bg-dark py-2 text-center">
+            <div id="announcement-top" class="col-8 col-sm-6 col-md-4 col-xl-3 my-auto p-1 mx-auto bg-dark text-center">
                 <small>Next meeting:</small>
                 <small>28th of June, 2022 | 18:00</small>
                 <small>RDS Building, D08 RX84</small><br>
-                <small><a href="">Book here!</a></small> | <a href=""><i class="bi bi-camera-video"></i></a>
-            </div>
+                <small><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Book here!</a></small> | <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="bi bi-camera-video"></i></a>
+            </div> 
 
-
-            
         </div>
-        <hr class="mt-4"> 
     </header>
+    <hr>
 
-        <section id="main-works-section" class="container p-5">
+        <section id="main-works-section" class="container px-auto px-md-4 px-xl-5">
 
-            <div class="row mb-4">
+            <div class="row mb-3">
                 <h1 class="text-center">Notable Works</h1>
             </div>
             
             <div class="row align-items-center">
-                <small class="col-12 col-md-8 mt-o pt-0">These are the works of literature that have been most appreciated in Ireland and abroad. All have won different
+                <p class="col-12 col-md-8 mb-3">These are the works of literature that have been most appreciated in Ireland and abroad. All have won different
                     awards and are all available for purchase in our own <span><i class="bi bi-shop-window"></i></span> shop or at our national partners.
-                </small>
+                </p>
                 <div class="col-12 col-md-4">
                     <img src="/img/chapters.jpg" alt="" class="img-fluid partner-logo">
                     <img src="/img/chapters.jpg" alt="" class="img-fluid partner-logo">
@@ -109,11 +111,11 @@
             </div>
 
             <div class="row mt-5">
-                <div class="col-3 p-0 d-flex justify-content-end">
-                    <img src="/img/book.jpg" alt="" class="img-fluid m-0 p-0 mr-auto ml-auto">
+                <div class="col-12 col-xl-3 mb-3 mb-xl-auto my-auto d-flex justify-content-center">
+                    <img src="/img/book.jpg" alt="" class="img-fluid">
                 </div>
 
-                <div class="col-9">
+                <div class="col-12 col-xl-9">
                     <h4>"Stories untold"</h4>
                     <p><span class="bold-text">Author:</span> Matther Perry</p>
                     <p><span class="bold-text">Description:</span> Use justify-content utilities on flexbox containers to change the alignment of 
@@ -127,7 +129,12 @@
             <hr>
 
             <div class="row mt-5">
-                <div class="col-9">
+                <!-- In order to place the image of the book at the end of the row, two images have been added. First one visible on small devices
+                and the second one available on large ones (>1400px) and Bootstrap display classes are used to hide them as required -->
+                <div class="col-12 col-xl-3 mb-3 mb-xl-auto my-auto d-flex justify-content-center d-xl-none">
+                    <img src="/img/book.jpg" alt="" class="img-fluid m-0 p-0 mr-auto ml-auto">
+                </div>
+                <div class="col-12 col-xl-9">
                     <h4>"Stories untold"</h4>
                     <p><span class="bold-text">Author:</span> Matther Perry</p>
                     <p><span class="bold-text">Description:</span> Use justify-content utilities on flexbox containers to change the alignment of 
@@ -137,17 +144,18 @@
                     <p><span class="bold-text">Available in:</span>
                     <a href="https://chapters.ie">Chapters Bookstore</a> and <a href="/store.html" target="_blanl">Inkwell Shards Store</a></p>
                 </div>
-                <div class="col-3 p-0 d-flex justify-content-end">
+                <div class="col-12 col-xl-3 mb-3 mb-xl-auto my-auto d-flex justify-content-center d-none d-xl-flex">
                     <img src="/img/book.jpg" alt="" class="img-fluid m-0 p-0 mr-auto ml-auto">
                 </div>
             </div>
             <hr>
 
             <div class="row mt-5">
-                <div class="col-3 p-0 d-flex justify-content-end">
-                    <img src="/img/book.jpg" alt="" class="img-fluid m-0 p-0 mr-auto ml-auto">
+                <div class="col-12 col-xl-3 mb-3 mb-xl-auto my-auto d-flex justify-content-center">
+                    <img src="/img/book.jpg" alt="" class="img-fluid">
                 </div>
-                <div class="col-9">
+
+                <div class="col-12 col-xl-9">
                     <h4>"Stories untold"</h4>
                     <p><span class="bold-text">Author:</span> Matther Perry</p>
                     <p><span class="bold-text">Description:</span> Use justify-content utilities on flexbox containers to change the alignment of 
@@ -161,7 +169,12 @@
             <hr>
 
             <div class="row mt-5">
-                <div class="col-9">
+                <!-- In order to place the image of the book at the end of the row, two images have been added. First one visible on small devices
+                and the second one available on large ones (>1400px) and Bootstrap display classes are used to hide them as required -->
+                <div class="col-12 col-xl-3 mb-3 mb-xl-auto my-auto d-flex justify-content-center d-xl-none">
+                    <img src="/img/book.jpg" alt="" class="img-fluid m-0 p-0 mr-auto ml-auto">
+                </div>
+                <div class="col-12 col-xl-9">
                     <h4>"Stories untold"</h4>
                     <p><span class="bold-text">Author:</span> Matther Perry</p>
                     <p><span class="bold-text">Description:</span> Use justify-content utilities on flexbox containers to change the alignment of 
@@ -171,11 +184,10 @@
                     <p><span class="bold-text">Available in:</span>
                     <a href="https://chapters.ie">Chapters Bookstore</a> and <a href="/store.html" target="_blanl">Inkwell Shards Store</a></p>
                 </div>
-                <div class="col-3 p-0 d-flex justify-content-end">
+                <div class="col-12 col-xl-3 mb-3 mb-xl-auto my-auto d-flex justify-content-center d-none d-xl-flex">
                     <img src="/img/book.jpg" alt="" class="img-fluid m-0 p-0 mr-auto ml-auto">
                 </div>
-            <hr>
-
+            </div>
 
         </section>
 

@@ -1,3 +1,7 @@
+#main-members-section {
+    min-height: 80vh;
+}
+
 .member-photo {
     width: 60px;
     height: 60px;
