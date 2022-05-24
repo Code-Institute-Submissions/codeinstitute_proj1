@@ -4,6 +4,7 @@
     --blue: #264e70;
     --green: #679186;
     --lime: #bbd4ce;
+    --links: orange;
 }
 
 * {
@@ -13,7 +14,10 @@
 }
 
 h1, h2, h3, h4, h5, h6,
-p, small {
+p, small,
+thead, tbody, th, tr, td,
+label, input,
+span {
     color: var(--pink)
 }
 
@@ -48,3 +52,26 @@ a {
     text-decoration: none;
     color: whitesmoke;
 }
+
+header a {
+    color: whitesmoke
+}
+
+header a:hover {
+    color: var(--links)
+}
+
+.custom-button {
+    background-color: var(--lime);
+    color: var(--blue);
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+.custom-button:hover {
+    background-color: var(--yellow);
+    transform: scale(1.1)
+}
+

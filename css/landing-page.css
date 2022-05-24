@@ -17,29 +17,19 @@ A new video HTML element will need to be added too */
 .descriptor-buttons {
     border: 0;
     border-radius: 0;
-    font-size: x-large;
+    font-size: large;
     font-weight: bolder;
-}
 
-#intro-button {
-    background-color: var(--lime);
-}
-
-#history-button {
-    background-color: var(--green);
-}
-
-#what-we-do-button {
-    background-color: var(--yellow);
-}
-
-header a {
-    color: whitesmoke
-}
-
-header a:hover {
-    color: orange
 }
 
 
+
+
+/* Media query to remove the fixed width on the buttons at widths under 700px */
+@media only screen and (min-width: 700px) {
+    .descriptor-buttons {
+        width: 30%;
+        border-radius: 5px 5px 5px 5px;
+    }
+}
 

@@ -39,7 +39,7 @@
             <!-- Social buttons, visible only on smaller sizes -->
             <ul class="navbar-nav d-xxl-none">
                 <li class="nav-item">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <button id="mattermost-button" class="btn mx-3 px-3"><i class="bi bi-slack"></i></button>
@@ -84,7 +84,7 @@
                 <small>Next meeting:</small>
                 <small>28th of June, 2022 | 18:00</small>
                 <small>RDS Building, D08 RX84</small><br>
-                <small><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Book here!</a></small> | <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="bi bi-camera-video"></i></a>
+                <small><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Book here!</a> | </small><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="align-middle"><i class="bi bi-camera-video"></i></a>
             </div> 
 
         </div>
@@ -105,8 +105,8 @@
                     on the Wicklow Way for a relaxed walk in with your fellow hikers. After a while we stop for a picnic lunch and then return back 
                     to the Roundwood Inn for coffee/tea and scones and for those rugby enthusiats you are welcome to watch Ireland V England.</p>
                     <div class="row d-flex justify-content-center justify-content-xl-start mt-3 mt-xl-auto">
-                        <button class="btn btn-success col-8 col-sm-8 col-md-4 col-xl-3 mb-3 mb-xl-auto mx-xl-3"><i class="bi bi-ticket-perforated"></i> Tickets</button>
-                        <button class="btn btn-success col-8 col-sm-8 col-md-4 col-xl-3"><i class="bi bi-calendar"></i> Get reminder</button>    
+                        <button class="custom-button py-3 col-8 col-sm-8 col-md-4 col-xl-3 mb-3 mb-xl-auto mx-xl-3" onclick="redirect()"><i class="bi bi-ticket-perforated"></i> Tickets</button>
+                        <button class="custom-button py-3 col-8 col-sm-8 col-md-4 col-xl-3" onclick="redirect()"><i class="bi bi-calendar"></i> Get reminder</button>    
                     </div>
                 </div>
             </div> 
@@ -124,8 +124,8 @@
                     on the Wicklow Way for a relaxed walk in with your fellow hikers. After a while we stop for a picnic lunch and then return back 
                     to the Roundwood Inn for coffee/tea and scones and for those rugby enthusiats you are welcome to watch Ireland V England.</p>
                     <div class="row d-flex justify-content-center justify-content-xl-start mt-3 mt-xl-auto">
-                        <button class="btn btn-success col-8 col-sm-8 col-md-4 col-xl-3 mb-3 mb-xl-auto mx-xl-3"><i class="bi bi-ticket-perforated"></i> Tickets</button>
-                        <button class="btn btn-success col-8 col-sm-8 col-md-4 col-xl-3"><i class="bi bi-calendar"></i> Get reminder</button>    
+                        <button class="custom-button py-3 col-8 col-sm-8 col-md-4 col-xl-3 mb-3 mb-xl-auto mx-xl-3" onclick="redirect()"><i class="bi bi-ticket-perforated"></i> Tickets</button>
+                        <button class="custom-button py-3 col-8 col-sm-8 col-md-4 col-xl-3" onclick="redirect()"><i class="bi bi-calendar"></i> Get reminder</button>    
                     </div>
                 </div>
             </div> 
@@ -142,8 +142,8 @@
                     on the Wicklow Way for a relaxed walk in with your fellow hikers. After a while we stop for a picnic lunch and then return back 
                     to the Roundwood Inn for coffee/tea and scones and for those rugby enthusiats you are welcome to watch Ireland V England.</p>
                     <div class="row d-flex justify-content-center justify-content-xl-start mt-3 mt-xl-auto">
-                        <button class="btn btn-success col-8 col-sm-8 col-md-4 col-xl-3 mb-3 mb-xl-auto mx-xl-3"><i class="bi bi-ticket-perforated"></i> Tickets</button>
-                        <button class="btn btn-success col-8 col-sm-8 col-md-4 col-xl-3"><i class="bi bi-calendar"></i> Get reminder</button>    
+                        <button class="custom-button py-3 col-8 col-sm-8 col-md-4 col-xl-3 mb-3 mb-xl-auto mx-xl-3" onclick="redirect()"><i class="bi bi-ticket-perforated"></i> Tickets</button>
+                        <button class="custom-button py-3 col-8 col-sm-8 col-md-4 col-xl-3" onclick="redirect()"><i class="bi bi-calendar"></i> Get reminder</button>    
                     </div>
                 </div>
             </div> 
@@ -163,9 +163,8 @@
  
 
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
     <!-- Custom scripts -->
     <script src="/js/landing-page.js"></script>
     <script src="/js/main.js"></script>

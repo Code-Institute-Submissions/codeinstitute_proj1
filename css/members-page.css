@@ -7,12 +7,27 @@
     height: 60px;
 }
 
+td span a:hover {
+    color: var(--links);
+}
+
+td span i:hover {
+    transform: scale(1.1);
+}
+
 #member-button {
     background-color: var(--pink);
     color: var(--blue);
     font-weight: bolder;
+    transition: 0.2s ease-in-out 0ms;
+
 }
 
 .modal-text {
     color: var(--blue)
+}
+
+#member-button:hover {
+    background-color: var(--yellow);
+    transform: scale(1.1);
 }

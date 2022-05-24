@@ -39,7 +39,7 @@
                 <!-- Social buttons, visible only on smaller sizes -->
                 <ul class="navbar-nav d-xxl-none">
                     <li class="nav-item">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <button id="mattermost-button" class="btn mx-3 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button><
@@ -84,7 +84,7 @@
                     <small>Next meeting:</small>
                     <small>28th of June, 2022 | 18:00</small>
                     <small>RDS Building, D08 RX84</small><br>
-                    <small><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Book here!</a></small> | <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="bi bi-camera-video"></i></a>
+                    <small><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Book here!</a> | </small><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="align-middle"><i class="bi bi-camera-video"></i></a>
                 </div> 
 
             </div>
@@ -99,10 +99,10 @@
                 <div class="col-12 col-xl-6">
                     <img src="/img/sbeckett.jpg" class="img-fluid px-xl-5 rounded mx-auto">
                 </div>
-                <div class="col-12 col-xl-6 mt-3 mt-xl-auto">
+                <div class="col-12 col-xl-6 mt-3 mt-xl-auto my-auto">
                     <figure>
                         <blockquote class="blockquote mx-auto">
-                          <p class="text-center">
+                          <p class="text-center my-auto">
                               Works within “The Theatre of the Absurd” explore what happens when human existence has no meaning or purpose, showing the 
                               progression from logical communication, to the irrational and illogical, eventually leading to silence. Much of Beckett’s 
                               work focused on man’s failure to overcome absurdity in life, in particular.
@@ -120,19 +120,17 @@
 
                 <div class="col-12 col-xl-9">
 
-                    <div class="row justify-content-center mb-4 mx-auto">
-                        <button id="intro-button" class="col-12 col-xl-4 btn btn-info descriptor-buttons">Introduction</button>
-                        <button id="history-button" class="col-12 col-xl-4 btn btn-info descriptor-buttons">Short History</button>
-                        <button id="what-we-do-button" class="col-12 col-xl-4 btn btn-info descriptor-buttons">What We Do</button>
+                    <div class="row justify-content-between mb-4 mx-auto">
+                        <button id="intro-button" class="col-12 col-xl-4 p-3 my-2 my-xl-auto custom-button descriptor-buttons">Introduction</button>
+                        <button id="history-button" class="col-12 col-xl-4 p-3 my-2 my-xl-auto custom-button descriptor-buttons">Short History</button>
+                        <button id="what-we-do-button" class="col-12 col-xl-4 p-3 my-2 my-xl-auto custom-button descriptor-buttons">What We Do</button>
                     </div>
 
                     <div id="intro-wrapper" class="d-block justify-content-center col-12 mx-auto">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lorem at nibh sollicitudin ornare. Aliquam vel urna lectus. 
-                            Pellentesque eu orci convallis, fermentum nunc vitae, suscipit ligula. Praesent eu tristique risus, gravida viverra sem. Nam sed 
-                            convallis velit, vel eleifend dui. Sed bibendum sagittis pellentesque. Fusce vitae laoreet elit. Mauris congue, orci ac pellentesque 
-                            consequat, metus quam viverra nisl, et ornare augue felis et sem. Nunc eget mauris ante. Curabitur consectetur est a dapibus 
-                            consectetur. Duis sed ipsum sit amet ligula aliquet vestibulum. Aliquam leo eros, fermentum non bibendum eu, tempor et nibh.     
+                            Introduction. Introduction. Introduction. Introduction. Introduction. Introduction. 
+                            Introduction. Introduction. Introduction. Introduction. Introduction. Introduction. 
+                            Introduction. Introduction. Introduction. Introduction. Introduction. Introduction. 
                         </p>
                     </div>
 
@@ -178,14 +176,9 @@
             </p>
         </footer>
 
-
-
- 
-
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
     <!-- Custom scripts -->
     <script src="/js/landing-page.js"></script>
     <script src="/js/main.js"></script>
