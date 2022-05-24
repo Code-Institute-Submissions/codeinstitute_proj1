@@ -1,12 +1,9 @@
-
-
-/* Left in here in case we need a video as background. 
-A new video HTML element will need to be added too */
-
 #main-landing-section {
     min-height: 100vh;
 }
 
+/* Left in here in case we need a video as background. 
+A new video HTML element will need to be added too */
 #background-video {
     position: fixed;
     right: 0;
@@ -38,6 +35,10 @@ A new video HTML element will need to be added too */
 
 header a {
     color: whitesmoke
+}
+
+header a:hover {
+    color: orange
 }
 
 

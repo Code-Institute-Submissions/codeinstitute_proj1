@@ -31,7 +31,7 @@
     <body class="container-fluid px-0 col-sm-11 col-md-10 col-xl-9 col-xxl-8">
 
         <!-- Bootstrap Navigation bar -->
-        <nav class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
+        <nav id="navigation-bar" class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
         
                 <a class="navbar-brand m-2 my-auto" href="/index.html">
                     <img src="/img/logo.png" id="navbar-logo"/> <span class="d-none d-md-inline">Inkwell Shards</span>
@@ -42,8 +42,8 @@
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <button id="mattermost-button" class="btn mx-3 px-3"><i class="bi bi-slack"></i></button>
-                        <button id="facebook-button" class="btn me-4 px-3"><i class="bi bi-facebook"></i></button>
+                        <button id="mattermost-button" class="btn mx-3 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button><
+                        <button id="facebook-button" class="btn me-4 px-3" onclick="redirect()"><i class="bi bi-facebook"></i></button>
 
                     </li>
                 </ul>
@@ -60,8 +60,8 @@
 
                 <!-- Social buttons for the large navbar, visible only on large displays -->
                 <ul class="navbar-nav mx-2 d-none d-xxl-flex">
-                    <li class="nav-item"><button id="mattermost-button" class="btn mx-2 px-3"><i class="bi bi-slack"></i></button></li>
-                    <li class="nav-item"><button id="facebook-button" class="btn mx-2 px-3"><i class="bi bi-facebook"></i></button></li>
+                    <li class="nav-item"><button id="mattermost-button" class="btn mx-2 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button></li>
+                    <li class="nav-item"><button id="facebook-button" class="btn mx-2 px-3" onclick="redirect()"><i class="bi bi-facebook"></i></button></li>
                 </ul>
 
               </ul>
@@ -173,20 +173,21 @@
         </section>
 
         <footer id="main-footer" class="col-12 container-fluid sticky-bottom">
-            <p class="text-center my-auto py-3">Inkwell Shards | All rights reserved</p>
+            <p class="text-center my-auto py-3">Inkwell Shards | All rights reserved
+                <br><span class="small">contact@inkwelldublin.ie</span>
+            </p>
         </footer>
 
 
 
  
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!-- To not forget to go through these, duplicate scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     
     <!-- Custom scripts -->
     <script src="/js/landing-page.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>
