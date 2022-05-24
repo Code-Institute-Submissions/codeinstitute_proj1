@@ -9,10 +9,10 @@
 * Samuel Beckett: https://www.flickr.com/photos/espinosa_rosique/15566192689
 
 ### Members page:
-* Member 1: Image by from https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=766935
-* Member 2: Image by from https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=607834
-* Member 3: Image by from https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6476535
-* Member 4: Image by from https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5432766
+* Member 1: Image from https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=766935
+* Member 2: Image from https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=607834
+* Member 3: Image from https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6476535
+* Member 4: Image from https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5432766
 
 
 ### Notable works / Shop:
