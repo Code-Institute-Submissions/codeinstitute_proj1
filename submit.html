@@ -81,7 +81,7 @@
 
             <div id="announcement-top" class="col-8 col-sm-6 col-md-4 col-xl-3 my-auto p-1 mx-auto bg-dark text-center">
                 <small>Next meeting:</small>
-                <small>28th of June, 2022 | 18:00</small>
+                <small>28th of June, 2022 | 18:00</small><br>
                 <small>RDS Building, D08 RX84</small><br>
                 <small><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Book here!</a> | </small><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="align-middle"><i class="bi bi-camera-video"></i></a>
             </div> 
@@ -90,40 +90,39 @@
     </header>
 
         <section id="main-submit-section" class="container px-auto px-md-4 px-xl-5 mt-4">
+            <h1 class="visually-hidden">Use this form to send us your work</h1>
 
             <!-- Bootstrap Form -->
             <form method="POST" action="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
                 <div class="col-12 col-md-10 col-xl-8 mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="submit-name" aria-describedby="emailHelp">
+                    <label for="submit-name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="submit-name" aria-describedby="nameHelp">
                 </div>
 
                 <div class="col-12 col-md-10 col-xl-8 mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Email Address</label>
-                  <input type="email" class="form-control" id="submit-email">
+                    <label for="submit-email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="submit-email" aria-describedby="emailHelp">
                 </div>
 
                 <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Don't publish my name</label>
+                    <label class="form-check-label" for="publish-name">Publish my name</label>
+                    <input type="checkbox" class="form-check-input" id="publish-name" aria-describedby="publishNameHelp">
                 </div>
 
                 <div class="col-12 col-md-10 col-xl-8 mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Paste your text here</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="20" maxlength="2000" placeholder="2000 characters maximum" ></textarea>
+                    <label for="main-text" class="form-label" for="main-text">Paste your text here</label>
+                    <textarea class="form-control" id="main-text" rows="20" maxlength="2000" placeholder="2000 characters maximum" aria-describedby="mainTextHelp"></textarea>
                 </div>
 
                 <p>or...</p>
 
                 <div class="col-12 col-md-10 col-xl-8 mb-3">
-                    <label for="formFile" class="form-label">Upload your text</label>
-                    <input class="form-control" type="file" id="formFile">
+                    <label for="form-file" class="form-label">Upload your text</label>
+                    <input class="form-control" type="file" id="form-file" aria-describedby="uploadFile">
                 </div>
 
-                <button type="submit" class="custom-button mb-4 p-3">Submit</button>
+                <button type="submit" class="custom-button mb-4 p-3" onclick="redirect()">Submit</button>
               </form>
-
-
 
         </section>
 

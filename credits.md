@@ -27,3 +27,6 @@ Events:
 Abbey Theatre: https://commons.wikimedia.org/wiki/File:Abbey_Theatre_@_Dublin.jpg
 Gaiety Theatre: https://www.geograph.ie/photo/6415039
 St. Patrick's Cathedral: https://www.flickr.com/photos/danielmennerich/48507363527
+
+Information about Nobel Awards: https://www.nobelprize.org/prizes/literature/1969/summary/
+
