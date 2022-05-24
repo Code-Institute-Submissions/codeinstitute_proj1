@@ -14,12 +14,14 @@ A new video HTML element will need to be added too */
     opacity: 1;
 }
 
+#samuel-beckett {
+    max-height: 600px;
+}
 .descriptor-buttons {
     border: 0;
     border-radius: 0;
     font-size: large;
     font-weight: bolder;
-
 }
 
 /* Media query to remove the fixed width on the buttons at widths under 700px */

@@ -37,70 +37,73 @@
   <nav id="navigation-bar" class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
 
     <a class="navbar-brand m-2 my-auto" href="index.html">
-      <img src="img/logo.png" id="navbar-logo" alt="Blue logo on white background" /> <span
-        class="d-none d-md-inline">Inkwell Shards</span>
+        <img src="img/logo.png" id="navbar-logo" alt="Blue logo on white background" /> <span
+            class="d-none d-md-inline">Inkwell Shards</span>
     </a>
     <!-- Social buttons, visible only on smaller sizes -->
     <ul class="navbar-nav d-xxl-none">
-      <li class="nav-item">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Here we use mattermost-button and facebook-button as classes rather than IDs because we 
-            are using these elements twice and we don't want any duplicate ID elements -->
-        <button class="mattermost-button btn mx-3 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button>
-        <button class="facebook-button btn me-4 px-3" onclick="redirect()"><i class="bi bi-facebook"></i></button>
+        <li class="nav-item">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Here we use mattermost-button and facebook-button as classes rather than IDs because we 
+                    are using these elements twice and we don't want any duplicate ID elements -->
+            <button class="mattermost-button btn mx-3 px-3" onclick="redirect()" aria-label="Mattermost Link"><i
+                    class="bi bi-slack"></i></button>
+            <button class="facebook-button btn me-4 px-3" onclick="redirect()" aria-label="Facebook Link"><i
+                    class="bi bi-facebook"></i></button>
 
-      </li>
+        </li>
     </ul>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto d-flex align-items-center">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
-        <li class="nav-item"><a class="nav-link" href="works.html">Notable Works</a></li>
-        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-        <li class="nav-item"><a class="nav-link" href="shop.html">Books for sale</a></li>
-        <li class="nav-item"><a class="nav-link" href="submit.html">Submit literature</a></li>
-      </ul>
+        <ul class="navbar-nav mx-auto d-flex align-items-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
+            <li class="nav-item"><a class="nav-link" href="works.html">Notable Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="shop.html">Books for sale</a></li>
+            <li class="nav-item"><a class="nav-link" href="submit.html">Submit literature</a></li>
+        </ul>
 
-      <!-- Social buttons for the large navbar, visible only on large displays -->
-      <ul class="navbar-nav mx-2 d-none d-xxl-flex">
-        <li class="nav-item"><button class="mattermost-button btn mx-2 px-3" onclick="redirect()"><i
-              class="bi bi-slack"></i></button></li>
-        <li class="nav-item"><button class="facebook-button btn mx-2 px-3" onclick="redirect()"><i
-              class="bi bi-facebook"></i></button></li>
-      </ul>
+        <!-- Social buttons for the large navbar, visible only on large displays -->
+        <ul class="navbar-nav mx-2 d-none d-xxl-flex">
+            <li class="nav-item"><button class="mattermost-button btn mx-2 px-3" onclick="redirect()" aria-label="Mattermost Link"><i
+                        class="bi bi-slack"></i></button></li>
+            <li class="nav-item"><button class="facebook-button btn mx-2 px-3" onclick="redirect()" aria-label="Facebook Link"><i
+                        class="bi bi-facebook"></i></button></li>
+        </ul>
 
     </div>
-  </nav>
+</nav>
 
   <!-- The header of the page, where a description is listed, together with an "announcements"
         board. The links here will lead the user to a booking page where they can reserve a seat at
         the next club's meeting -->
-  <header class="container px-auto px-md-4 px-xl-5">
-    <div class="row">
-
-      <div class="col-12 col-md-8 col-xl-9 mb-3 my-auto mx-auto">
-        <h1>Inkwell Shards</h1>
-        <h6>Dublin literary club, opened to all new, talented and interested writers living in the Dublin area. We
-          accept submission
-          of all kinds, from poetry, to drama, to TikToks. Meeting monthly, in person and via Zoom <span><i
-              class="bi bi-camera-video"></i></span></h6>
-      </div>
-
-      <div id="announcement-top" class="col-8 col-sm-6 col-md-4 col-xl-3 my-auto p-1 mx-auto bg-dark text-center">
-        <small>Next meeting:</small>
-        <small>28th of June, 2022 | 18:00</small><br>
-        <small>RDS Building, D08 RX84</small><br>
-        <small><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Book here!</a> | </small><a
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="align-middle"><i
-            class="bi bi-camera-video"></i></a>
-      </div>
-
-    </div>
-  </header>
+        <header class="container px-auto px-md-4 px-xl-5">
+          <div class="row">
+  
+              <div class="col-12 col-md-8 col-xl-9 mb-3 my-auto mx-auto">
+                  <h1>Inkwell Shards</h1>
+                  <h6>Dublin literary club, opened to all new, talented and interested writers living in the Dublin area.
+                      We accept submission
+                      of all kinds, from poetry, to drama, to TikToks. Meeting monthly, in person and via Zoom <span><i
+                              class="bi bi-camera-video"></i></span></h6>
+              </div>
+  
+              <div id="announcement-top" class="col-8 col-sm-6 col-md-4 col-xl-3 my-auto p-1 mx-auto bg-dark text-center">
+                  <small>Next meeting:</small>
+                  <small>28th of June, 2022 | 18:00</small><br>
+                  <small>RDS Building, D08 RX84</small><br>
+                  <small><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Book here!</a> | </small><a
+                      href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="align-middle"><i
+                          class="bi bi-camera-video"><span class="visually-hidden">Zoom Link</span></i></a>
+              </div>
+  
+          </div>
+      </header>
 
   <h1 class="visually-hidden">Our shop, where a variety of book are up for sale</h1>
   <section id="main-shop-section" class="container px-auto px-md-4 px-xl-5 mt-4">
