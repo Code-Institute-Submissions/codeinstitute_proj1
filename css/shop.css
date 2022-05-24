@@ -3,6 +3,11 @@
 }
 
 td img {
-    width: 200px;
+    width: auto;
     height: 200px;
+    transition: 0.2s ease-in-out;
+}
+
+td img:hover {
+    transform: scale(1.2);
 }

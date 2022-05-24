@@ -30,43 +30,42 @@
 
     <body class="container-fluid col-12 col-sm-10 col-md-8 p-0">
 
-         <!-- Bootstrap Navigation bar -->
-         <nav class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
-        
-            <a class="navbar-brand m-2 my-auto" href="/index.html">
-                <img src="/img/logo.png" id="navbar-logo"/> <span class="d-none d-md-inline">Inkwell Shards</span>
-            </a>
-            <!-- Social buttons, visible only on smaller sizes -->
-            <ul class="navbar-nav d-xxl-none">
-                <li class="nav-item">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <button id="mattermost-button" class="btn mx-3 px-3"><i class="bi bi-slack"></i></button>
-                    <button id="facebook-button" class="btn me-4 px-3"><i class="bi bi-facebook"></i></button>
+    <!-- Bootstrap Navigation bar -->
+    <nav id="navigation-bar" class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
+            
+        <a class="navbar-brand m-2 my-auto" href="/index.html">
+            <img src="/img/logo.png" id="navbar-logo"/> <span class="d-none d-md-inline">Inkwell Shards</span>
+        </a>
+        <!-- Social buttons, visible only on smaller sizes -->
+        <ul class="navbar-nav d-xxl-none">
+            <li class="nav-item">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button id="mattermost-button" class="btn mx-3 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button>
+                <button id="facebook-button" class="btn me-4 px-3" onclick="redirect()"><i class="bi bi-facebook"></i></button>
 
-                </li>
-            </ul>
+            </li>
+        </ul>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto d-flex align-items-center">
-                <li class="nav-item active"><a class="nav-link" href="/index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/members.html">Members</a></li>
-                <li class="nav-item"><a class="nav-link" href="/works.html">Notable Works</a></li>
-                <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="/shop.html">Books for sale</a></li>
-                <li class="nav-item"><a class="nav-link" href="/submit.html">Submit literature</a></li>
-            </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto d-flex align-items-center">
+            <li class="nav-item active"><a class="nav-link" href="/index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/members.html">Members</a></li>
+            <li class="nav-item"><a class="nav-link" href="/works.html">Notable Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="/shop.html">Books for sale</a></li>
+            <li class="nav-item"><a class="nav-link" href="/submit.html">Submit literature</a></li>
+        </ul>
 
-            <!-- Social buttons for the large navbar, visible only on large displays -->
-            <ul class="navbar-nav mx-2 d-none d-xxl-flex">
-                <li class="nav-item"><button id="mattermost-button" class="btn mx-2 px-3"><i class="bi bi-slack"></i></button></li>
-                <li class="nav-item"><button id="facebook-button" class="btn mx-2 px-3"><i class="bi bi-facebook"></i></button></li>
-            </ul>
+        <!-- Social buttons for the large navbar, visible only on large displays -->
+        <ul class="navbar-nav mx-2 d-none d-xxl-flex">
+            <li class="nav-item"><button id="mattermost-button" class="btn mx-2 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button></li>
+            <li class="nav-item"><button id="facebook-button" class="btn mx-2 px-3" onclick="redirect()"><i class="bi bi-facebook"></i></button></li>
+        </ul>
 
-          </ul>
-        </div>
-      </nav>
+    </div>
+    </nav>
     
     <!-- The header of the page, where a description is listed, together with an "announcements"
     board. The links here will lead the user to a booking page where they can reserve a seat at

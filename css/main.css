@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6,
 p, small,
 thead, tbody, th, tr, td,
 label, input,
+ul, ol, li,
 span {
     color: var(--pink)
 }
@@ -57,7 +58,7 @@ header a {
     color: whitesmoke
 }
 
-header a:hover {
+a:hover {
     color: var(--links)
 }
 

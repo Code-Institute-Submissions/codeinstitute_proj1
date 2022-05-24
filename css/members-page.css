@@ -4,7 +4,7 @@
 
 .member-photo {
     width: 60px;
-    height: 60px;
+    height: auto;
 }
 
 td span a:hover {

@@ -30,43 +30,42 @@
 
     <body class="container-fluid px-0 col-sm-11 col-md-10 col-xl-9 col-xxl-8">
 
-        <!-- Bootstrap Navigation bar -->
-        <nav class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
-        
-            <a class="navbar-brand m-2 my-auto" href="/index.html">
-                <img src="/img/logo.png" id="navbar-logo"/> <span class="d-none d-md-inline">Inkwell Shards</span>
-            </a>
-            <!-- Social buttons, visible only on smaller sizes -->
-            <ul class="navbar-nav d-xxl-none">
-                <li class="nav-item">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <button id="mattermost-button" class="btn mx-3 px-3"><i class="bi bi-slack"></i></button>
-                    <button id="facebook-button" class="btn me-4 px-3"><i class="bi bi-facebook"></i></button>
+    <!-- Bootstrap Navigation bar -->
+    <nav id="navigation-bar" class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
+            
+        <a class="navbar-brand m-2 my-auto" href="/index.html">
+            <img src="/img/logo.png" id="navbar-logo"/> <span class="d-none d-md-inline">Inkwell Shards</span>
+        </a>
+        <!-- Social buttons, visible only on smaller sizes -->
+        <ul class="navbar-nav d-xxl-none">
+            <li class="nav-item">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button id="mattermost-button" class="btn mx-3 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button>
+                <button id="facebook-button" class="btn me-4 px-3" onclick="redirect()"><i class="bi bi-facebook"></i></button>
 
-                </li>
-            </ul>
+            </li>
+        </ul>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto d-flex align-items-center">
-                <li class="nav-item active"><a class="nav-link" href="/index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/members.html">Members</a></li>
-                <li class="nav-item"><a class="nav-link" href="/works.html">Notable Works</a></li>
-                <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="/shop.html">Books for sale</a></li>
-                <li class="nav-item"><a class="nav-link" href="/submit.html">Submit literature</a></li>
-            </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto d-flex align-items-center">
+            <li class="nav-item active"><a class="nav-link" href="/index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/members.html">Members</a></li>
+            <li class="nav-item"><a class="nav-link" href="/works.html">Notable Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="/shop.html">Books for sale</a></li>
+            <li class="nav-item"><a class="nav-link" href="/submit.html">Submit literature</a></li>
+        </ul>
 
-            <!-- Social buttons for the large navbar, visible only on large displays -->
-            <ul class="navbar-nav mx-2 d-none d-xxl-flex">
-                <li class="nav-item"><button id="mattermost-button" class="btn mx-2 px-3"><i class="bi bi-slack"></i></button></li>
-                <li class="nav-item"><button id="facebook-button" class="btn mx-2 px-3"><i class="bi bi-facebook"></i></button></li>
-            </ul>
+        <!-- Social buttons for the large navbar, visible only on large displays -->
+        <ul class="navbar-nav mx-2 d-none d-xxl-flex">
+            <li class="nav-item"><button id="mattermost-button" class="btn mx-2 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button></li>
+            <li class="nav-item"><button id="facebook-button" class="btn mx-2 px-3" onclick="redirect()"><i class="bi bi-facebook"></i></button></li>
+        </ul>
 
-          </ul>
-        </div>
-      </nav>
+    </div>
+    </nav>
     
     <!-- The header of the page, where a description is listed, together with an "announcements"
     board. The links here will lead the user to a booking page where they can reserve a seat at
@@ -95,11 +94,11 @@
 
             <div class="row">
                 <div class="col-12 col-xl-3">
-                    <img src="/img/gaiety.jpg" alt="" class="img-fluid">
+                    <img src="/img/events/abbey.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-12 col-xl-9">
                     <h5 class="mt-3 mt-xl-auto">Annual Irish Writer's Gala | 21.08.2088</h5>
-                    <small class="bold-text">Gaiety Theatre, Dublin</small>
+                    <small class="bold-text">Abbey Theatre, Dublin <span class="bold-text"><a href="https://goo.gl/maps/q3Ryivxh5veVAvSR8" alt="" target="_blank">[Directions]</a></span></small>
                     <p>This event is for you!  We have a limited number of places for this Sunday's Wicklow Walk. You need a moderate level of fitness, 
                     hiking boots, rain gear, water and a picnic lunch. We meet at the Roundwood Inn, then carpool and to Lough Dan and then head out 
                     on the Wicklow Way for a relaxed walk in with your fellow hikers. After a while we stop for a picnic lunch and then return back 
@@ -114,11 +113,11 @@
 
             <div class="row my-5">
                 <div class="col-12 col-xl-3">
-                    <img src="/img/gaiety.jpg" alt="" class="img-fluid">
+                    <img src="/img/events/gaiety.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-12 col-xl-9">
                     <h5 class="mt-3 mt-xl-auto">Annual Irish Writer's Gala | 21.08.2088</h5>
-                    <small class="bold-text">Gaiety Theatre, Dublin</small>
+                    <small class="bold-text">Gaiety Theatre, Dublin <span class="bold-text"><a href="https://goo.gl/maps/3vPsnYSeish5R1Jf7" alt="" target="_blank">[Directions]</a></span></small>
                     <p>This event is for you!  We have a limited number of places for this Sunday's Wicklow Walk. You need a moderate level of fitness, 
                     hiking boots, rain gear, water and a picnic lunch. We meet at the Roundwood Inn, then carpool and to Lough Dan and then head out 
                     on the Wicklow Way for a relaxed walk in with your fellow hikers. After a while we stop for a picnic lunch and then return back 
@@ -132,11 +131,11 @@
 
             <div class="row mb-5">
                 <div class="col-12 col-xl-3">
-                    <img src="/img/gaiety.jpg" alt="" class="img-fluid">
+                    <img src="/img/events/stpatrick.png" alt="" class="img-fluid">
                 </div>
                 <div class="col-12 col-xl-9">
                     <h5 class="mt-3 mt-xl-auto">Annual Irish Writer's Gala | 21.08.2088</h5>
-                    <small class="bold-text">Gaiety Theatre, Dublin</small>
+                    <small class="bold-text">Gaiety Theatre, Dublin <span class="bold-text"><a href="https://goo.gl/maps/R3z3bQvR4aqxPauH9" alt="" target="_blank">[Directions]</a></span></small>
                     <p>This event is for you!  We have a limited number of places for this Sunday's Wicklow Walk. You need a moderate level of fitness, 
                     hiking boots, rain gear, water and a picnic lunch. We meet at the Roundwood Inn, then carpool and to Lough Dan and then head out 
                     on the Wicklow Way for a relaxed walk in with your fellow hikers. After a while we stop for a picnic lunch and then return back 

@@ -30,45 +30,41 @@
 
     <body class="container-fluid px-0 col-sm-11 col-md-10 col-xl-9 col-xxl-8">
 
-        <!-- Bootstrap Navigation bar -->
+    <!-- Bootstrap Navigation bar -->
+    <nav id="navigation-bar" class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
+            
+        <a class="navbar-brand m-2 my-auto" href="/index.html">
+            <img src="/img/logo.png" id="navbar-logo"/> <span class="d-none d-md-inline">Inkwell Shards</span>
+        </a>
+        <!-- Social buttons, visible only on smaller sizes -->
+        <ul class="navbar-nav d-xxl-none">
+            <li class="nav-item">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <button id="mattermost-button" class="btn mx-3 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button>
+                <button id="facebook-button" class="btn me-4 px-3" onclick="redirect()"><i class="bi bi-facebook"></i></button>
 
-        <!-- Bootstrap Navigation bar -->
-        <nav class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
-        
-            <a class="navbar-brand m-2 my-auto" href="/index.html">
-                <img src="/img/logo.png" id="navbar-logo"/> <span class="d-none d-md-inline">Inkwell Shards</span>
-            </a>
-            <!-- Social buttons, visible only on smaller sizes -->
-            <ul class="navbar-nav d-xxl-none">
-                <li class="nav-item">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <button id="mattermost-button" class="btn mx-3 px-3"><i class="bi bi-slack"></i></button>
-                    <button id="facebook-button" class="btn me-4 px-3"><i class="bi bi-facebook"></i></button>
+            </li>
+        </ul>
 
-                </li>
-            </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto d-flex align-items-center">
+            <li class="nav-item active"><a class="nav-link" href="/index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/members.html">Members</a></li>
+            <li class="nav-item"><a class="nav-link" href="/works.html">Notable Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="/shop.html">Books for sale</a></li>
+            <li class="nav-item"><a class="nav-link" href="/submit.html">Submit literature</a></li>
+        </ul>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto d-flex align-items-center">
-                <li class="nav-item active"><a class="nav-link" href="/index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/members.html">Members</a></li>
-                <li class="nav-item"><a class="nav-link" href="/works.html">Notable Works</a></li>
-                <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
-                <li class="nav-item"><a class="nav-link" href="/shop.html">Books for sale</a></li>
-                <li class="nav-item"><a class="nav-link" href="/submit.html">Submit literature</a></li>
-            </ul>
-
-            <!-- Social buttons for the large navbar, visible only on large displays -->
-            <ul class="navbar-nav mx-2 d-none d-xxl-flex">
-                <li class="nav-item"><button id="mattermost-button" class="btn mx-2 px-3"><i class="bi bi-slack"></i></button></li>
-                <li class="nav-item"><button id="facebook-button" class="btn mx-2 px-3"><i class="bi bi-facebook"></i></button></li>
-            </ul>
-
-          </ul>
-        </div>
-      </nav>
+        <!-- Social buttons for the large navbar, visible only on large displays -->
+        <ul class="navbar-nav mx-2 d-none d-xxl-flex">
+            <li class="nav-item"><button id="mattermost-button" class="btn mx-2 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button></li>
+            <li class="nav-item"><button id="facebook-button" class="btn mx-2 px-3" onclick="redirect()"><i class="bi bi-facebook"></i></button></li>
+        </ul>
+    </div>
+</nav>
     
     <!-- The header of the page, where a description is listed, together with an "announcements"
     board. The links here will lead the user to a booking page where they can reserve a seat at
@@ -104,23 +100,90 @@
                     awards and are all available for purchase in our own <span><i class="bi bi-shop-window"></i></span> shop or at our national partners.
                 </p>
                 <div class="col-12 col-md-4">
-                    <img src="/img/chapters.jpg" alt="" class="img-fluid partner-logo">
-                    <img src="/img/chapters.jpg" alt="" class="img-fluid partner-logo">
-                    <img src="/img/chapters.jpg" alt="" class="img-fluid partner-logo">
+                    <img src="/img/works/partner-logo.png" alt="" class="img-fluid partner-logo">
+                    <img src="/img/works/partner-logo.png" alt="" class="img-fluid partner-logo">
+                    <img src="/img/works/partner-logo.png" alt="" class="img-fluid partner-logo">
                 </div>
             </div>
 
             <div class="row mt-5">
                 <div class="col-12 col-xl-3 mb-3 mb-xl-auto my-auto d-flex justify-content-center">
-                    <img src="/img/book.jpg" alt="" class="img-fluid">
+                    <img src="/img/works/travels.png" alt="" class="img-fluid">
                 </div>
 
                 <div class="col-12 col-xl-9">
-                    <h4>"Stories untold"</h4>
-                    <p><span class="bold-text">Author:</span> Matther Perry</p>
-                    <p><span class="bold-text">Description:</span> Use justify-content utilities on flexbox containers to change the alignment of 
-                    flex items on the main axis (the x-axis to start, y-axis if flex-direction: column). Choose from start (browser default), end, 
-                    center, between, around, or evenly.</p>
+                    <h4>"Travels"</h4>
+                    <p><span class="bold-text">Author:</span> Michael Crichton</p>
+                    <p><span class="bold-text">Description:</span> From the bestselling author of Jurassic Park, Timeline, and Sphere comes a deeply personal 
+                        memoir full of fascinating adventures as he travels everywhere from the Mayan pyramids to Kilimanjaro.
+
+                        Fueled by a powerful curiosity—and by a need to see, feel, and hear, firsthand and close-up—Michael Crichton's journeys have carried 
+                        him into worlds diverse and compelling—swimming with mud sharks in Tahiti, tracking wild animals through the jungle of Rwanda. 
+                        This is a record of those travels—an exhilarating quest across the familiar and exotic frontiers of the outer world, a determined 
+                        odyssey into the unfathomable, spiritual depths of the inner world. It is an adventure of risk and rejuvenation, terror and wonder,
+                         as exciting as Michael Crichton's many masterful and widely heralded works of fiction.
+                        
+                        For Michael Crichton, being a Harvard-trained physician, the author of two bestsellers, and a movie director is not enough. 
+                        It is, he resolves, time to travel. From swimming with sharks in Tahiti to psychic experiences in the American desert, 
+                        Crichton records his exhilarating quest through the familiar and exotic frontiers of the outer world....
+                    </p>
+                    <p><span class="bold-text">Awards:</span> Dublin Award for Literature, 2001 | Leintrim Best Work of Fiction, 2002</p>
+                    <p><span class="bold-text">Available in:</span>
+                    <a href="https://chapters.ie">Chapters Bookstore</a> and <a href="/store.html" target="_blank">Inkwell Shards Store</a></p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row mt-5">
+                <!-- In order to place the image of the book at the end of the row, two images have been added. First one visible on small devices
+                and the second one available on large ones (>1400px) and Bootstrap display classes are used to hide them as required -->
+                <div class="col-12 col-xl-3 mb-3 mb-xl-auto my-auto d-flex justify-content-center d-xl-none">
+                    <img src="/img/works/home.png" alt="" class="img-fluid m-0 p-0 mr-auto ml-auto">
+                </div>
+                <div class="col-12 col-xl-9">
+                    <h4>Home for Erring and Outcast Girls</h4>
+                    <p><span class="bold-text">Author:</span> Julie Kibler</p>
+                    <p><span class="bold-text">Description:</span> In turn-of-the-20th century Texas, the Berachah Home for the Redemption and Protection 
+                        of Erring Girls is an unprecedented beacon of hope for young women consigned to the dangerous poverty of the streets by birth, 
+                        ircumstance, or personal tragedy. Built in 1903 on the dusty outskirts of Arlington, a remote dot between Dallas and Fort Worth's 
+                        red-light districts, the progressive home bucks public opinion by offering faith, training, and rehabilitation to prostitutes, 
+                        addicts, unwed mothers, and "ruined" girls without forcibly separating mothers from children. When Lizzie Bates and Mattie McBride 
+                        meet there--one sick and abused, but desperately clinging to her young daughter, the other jilted by the beau who fathered her 
+                        ailing son--they form a friendship that will see them through unbearable loss, heartbreak, difficult choices, and ultimately,
+                         diverging paths.
+
+                        A century later, Cate Sutton, a reclusive university librarian, uncovers the hidden histories of the two troubled women as she 
+                        stumbles upon the cemetery on the home's former grounds and begins to comb through its archives in her library. Pulled by an
+                         indescribable connection, what Cate discovers about their stories leads her to confront her own heartbreaking past, and to 
+                         reclaim the life she thought she'd let go forever. With great pathos and powerful emotional resonance, Home for Erring and 
+                         Outcast Girls explores the dark roads that lead us to ruin, and the paths we take to return to ourselves.</p>
+                    <p><span class="bold-text">Awards:</span> Dublin Award for Literature, 2001 | Leintrim Best Work of Fiction, 2002</p>
+                    <p><span class="bold-text">Available in:</span>
+                    <a href="https://chapters.ie">Chapters Bookstore</a> and <a href="/store.html" target="_blanl">Inkwell Shards Store</a></p>
+                </div>
+                <div class="col-12 col-xl-3 mb-3 mb-xl-auto my-auto d-flex justify-content-center d-none d-xl-flex">
+                    <img src="/img/works/home.png" alt="" class="img-fluid m-0 p-0 mr-auto ml-auto">
+                </div>
+            </div>
+            <hr>
+
+            <div class="row mt-5">
+                <div class="col-12 col-xl-3 mb-3 mb-xl-auto my-auto d-flex justify-content-center">
+                    <img src="/img/works/dontforget.png" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-xl-9">
+                    <h4>"Don't Ever Forget"</h4>
+                    <p><span class="bold-text">Author:</span> Matthew Farrell</p>
+                    <p><span class="bold-text">Description:</span> From the bestselling author of What Have You Done comes a mind-bending page-turner involving 
+                        a series of dark crimes from the past.
+
+                        When police investigator Susan Adler is called to the roadside murder of a fellow state trooper, she’s tasked with finding the people 
+                        responsible for the cold-blooded act caught on the trooper’s dashboard cam. The investigation takes a chilling turn when people 
+                        involved with both the nurse and old man begin to turn up dead, and Susan enlists the help of her friend and forensic investigator 
+                        Liam Dwyer. What started as a traffic stop gone wrong quickly unfolds into one of the darkest cases of Susan’s career, and it all 
+                        leads to a sick, desperate killer. Susan and Liam must work fast to save the old man’s life and keep future victims from the killer’s 
+                        grasp.</p>
                     <p><span class="bold-text">Awards:</span> Dublin Award for Literature, 2001 | Leintrim Best Work of Fiction, 2002</p>
                     <p><span class="bold-text">Available in:</span>
                     <a href="https://chapters.ie">Chapters Bookstore</a> and <a href="/store.html" target="_blanl">Inkwell Shards Store</a></p>
@@ -132,60 +195,29 @@
                 <!-- In order to place the image of the book at the end of the row, two images have been added. First one visible on small devices
                 and the second one available on large ones (>1400px) and Bootstrap display classes are used to hide them as required -->
                 <div class="col-12 col-xl-3 mb-3 mb-xl-auto my-auto d-flex justify-content-center d-xl-none">
-                    <img src="/img/book.jpg" alt="" class="img-fluid m-0 p-0 mr-auto ml-auto">
+                    <img src="/img/works/stranger.png" alt="" class="img-fluid m-0 p-0 mr-auto ml-auto">
                 </div>
                 <div class="col-12 col-xl-9">
-                    <h4>"Stories untold"</h4>
-                    <p><span class="bold-text">Author:</span> Matther Perry</p>
-                    <p><span class="bold-text">Description:</span> Use justify-content utilities on flexbox containers to change the alignment of 
-                    flex items on the main axis (the x-axis to start, y-axis if flex-direction: column). Choose from start (browser default), end, 
-                    center, between, around, or evenly.</p>
+                    <h4>"The Stranger in the Mirror"</h4>
+                    <p><span class="bold-text">Author:</span> Liv Constantine</p>
+                    <p><span class="bold-text">Description:</span> Addison’s about to get married, but she’s not looking forward to the big day. 
+                        It’s not her fiancé; he’s a wonderful man. It’s because Addison doesn't know who she really is. A few years ago, a kind 
+                        driver found her bleeding next to a New Jersey highway and rescued her. While her physical wounds healed, Addison’s memory 
+                        never returned. She doesn’t know her real name. Or how she ended up injured on the side of a road. Or why she can’t shake 
+                        the notion that she may have done something very, very bad . . .
+
+                        In a posh home in the Boston suburbs, Julian tries to figure out what happened to his loving, caring wife, Cassandra, who 
+                        disappeared without a trace two years ago. She would never have left him and their seven-year-old daughter Valentina of her 
+                        own free will—or would she?
+                        
+                        As these two lives intersect, The Stranger in the Mirror hooks readers with riveting drama, told with Liv Constantine’s 
+                        hallmark blend of glamour, tense psychological thrills, and jaw-dropping twists.</p>
                     <p><span class="bold-text">Awards:</span> Dublin Award for Literature, 2001 | Leintrim Best Work of Fiction, 2002</p>
                     <p><span class="bold-text">Available in:</span>
                     <a href="https://chapters.ie">Chapters Bookstore</a> and <a href="/store.html" target="_blanl">Inkwell Shards Store</a></p>
                 </div>
                 <div class="col-12 col-xl-3 mb-3 mb-xl-auto my-auto d-flex justify-content-center d-none d-xl-flex">
-                    <img src="/img/book.jpg" alt="" class="img-fluid m-0 p-0 mr-auto ml-auto">
-                </div>
-            </div>
-            <hr>
-
-            <div class="row mt-5">
-                <div class="col-12 col-xl-3 mb-3 mb-xl-auto my-auto d-flex justify-content-center">
-                    <img src="/img/book.jpg" alt="" class="img-fluid">
-                </div>
-
-                <div class="col-12 col-xl-9">
-                    <h4>"Stories untold"</h4>
-                    <p><span class="bold-text">Author:</span> Matther Perry</p>
-                    <p><span class="bold-text">Description:</span> Use justify-content utilities on flexbox containers to change the alignment of 
-                    flex items on the main axis (the x-axis to start, y-axis if flex-direction: column). Choose from start (browser default), end, 
-                    center, between, around, or evenly.</p>
-                    <p><span class="bold-text">Awards:</span> Dublin Award for Literature, 2001 | Leintrim Best Work of Fiction, 2002</p>
-                    <p><span class="bold-text">Available in:</span>
-                    <a href="https://chapters.ie">Chapters Bookstore</a> and <a href="/store.html" target="_blanl">Inkwell Shards Store</a></p>
-                </div>
-            </div>
-            <hr>
-
-            <div class="row mt-5">
-                <!-- In order to place the image of the book at the end of the row, two images have been added. First one visible on small devices
-                and the second one available on large ones (>1400px) and Bootstrap display classes are used to hide them as required -->
-                <div class="col-12 col-xl-3 mb-3 mb-xl-auto my-auto d-flex justify-content-center d-xl-none">
-                    <img src="/img/book.jpg" alt="" class="img-fluid m-0 p-0 mr-auto ml-auto">
-                </div>
-                <div class="col-12 col-xl-9">
-                    <h4>"Stories untold"</h4>
-                    <p><span class="bold-text">Author:</span> Matther Perry</p>
-                    <p><span class="bold-text">Description:</span> Use justify-content utilities on flexbox containers to change the alignment of 
-                    flex items on the main axis (the x-axis to start, y-axis if flex-direction: column). Choose from start (browser default), end, 
-                    center, between, around, or evenly.</p>
-                    <p><span class="bold-text">Awards:</span> Dublin Award for Literature, 2001 | Leintrim Best Work of Fiction, 2002</p>
-                    <p><span class="bold-text">Available in:</span>
-                    <a href="https://chapters.ie">Chapters Bookstore</a> and <a href="/store.html" target="_blanl">Inkwell Shards Store</a></p>
-                </div>
-                <div class="col-12 col-xl-3 mb-3 mb-xl-auto my-auto d-flex justify-content-center d-none d-xl-flex">
-                    <img src="/img/book.jpg" alt="" class="img-fluid m-0 p-0 mr-auto ml-auto">
+                    <img src="/img/works/stranger.png" alt="" class="img-fluid m-0 p-0 mr-auto ml-auto">
                 </div>
             </div>
 
