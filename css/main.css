@@ -9,33 +9,49 @@
 
 * {
     /* border: 1px solid black; */
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6,
-p, small,
-thead, tbody, th, tr, td,
-label, input,
-ul, ol, li,
-span, cite, figcaption {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+thead,
+tbody,
+th,
+tr,
+td,
+label,
+input,
+ul,
+ol,
+li,
+span,
+cite,
+figcaption {
     color: var(--pink)
 }
 
-footer p, footer span {
+footer p,
+footer span {
     color: var(--blue);
     font-size: large;
     font-weight: bold;
 }
 
 
-html { 
-    background: url("../img/background.png") no-repeat center center fixed; 
+html {
+    background: url("../img/background.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
 
 body {
     background-color: var(--blue);
@@ -83,3 +99,8 @@ a:hover {
     transform: scale(1.1)
 }
 
+@media only screen and (max-width: 700px) {
+    html {
+        background: var(--green);
+    }
+}
