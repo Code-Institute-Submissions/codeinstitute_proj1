@@ -3,5 +3,5 @@ function redirect() {
 }
 
 function redirectSubmit() {
-    window.open("/submit.html");
+    window.open("submit.html");
 }
