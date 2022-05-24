@@ -26,15 +26,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
         <title>Inkwell Shards | Members </title>
+        <!-- Page validated with W3.org validator on 24/05/2022, no errors or warnings found -->
+
     </head>
 
     <body class="container-fluid px-0 col-sm-11 col-md-10 col-xl-9 col-xxl-8">
 
         <!-- Bootstrap Navigation bar -->
         <nav id="navigation-bar" class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
-                
+        
             <a class="navbar-brand m-2 my-auto" href="/index.html">
-                <img src="/img/logo.png" id="navbar-logo"/> <span class="d-none d-md-inline">Inkwell Shards</span>
+                <img src="/img/logo.png" id="navbar-logo" alt="Blue logo on white background"/> <span class="d-none d-md-inline">Inkwell Shards</span>
             </a>
             <!-- Social buttons, visible only on smaller sizes -->
             <ul class="navbar-nav d-xxl-none">
@@ -42,8 +44,10 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <button id="mattermost-button" class="btn mx-3 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button>
-                    <button id="facebook-button" class="btn me-4 px-3" onclick="redirect()"><i class="bi bi-facebook"></i></button>
+                    <!-- Here we use mattermost-button and facebook-button as classes rather than IDs because we 
+                    are using these elements twice and we don't want any duplicate ID elements -->
+                    <button class="mattermost-button btn mx-3 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button>
+                    <button class="facebook-button btn me-4 px-3" onclick="redirect()"><i class="bi bi-facebook"></i></button>
 
                 </li>
             </ul>
@@ -60,12 +64,12 @@
 
             <!-- Social buttons for the large navbar, visible only on large displays -->
             <ul class="navbar-nav mx-2 d-none d-xxl-flex">
-                <li class="nav-item"><button id="mattermost-button" class="btn mx-2 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button></li>
-                <li class="nav-item"><button id="facebook-button" class="btn mx-2 px-3" onclick="redirect()"><i class="bi bi-facebook"></i></button></li>
+                <li class="nav-item"><button class="mattermost-button btn mx-2 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button></li>
+                <li class="nav-item"><button class="facebook-button btn mx-2 px-3" onclick="redirect()"><i class="bi bi-facebook"></i></button></li>
             </ul>
 
         </div>
-        </nav>
+      </nav>
         
         <!-- The header of the page, where a description is listed, together with an "announcements"
         board. The links here will lead the user to a booking page where they can reserve a seat at
@@ -91,6 +95,7 @@
 
         <hr>
 
+        <h1 class="visually-hidden">A short list of our members</h1>
         <section id="main-members-section" class="container px-auto px-md-4 px-xl-5">
 
             <div class="row">
@@ -116,7 +121,7 @@
 
                   <tr>
                     <td>
-                        <img src="/img/members/1.jpg" class="img-fluid member-photo" />
+                        <img src="/img/members/1.jpg" class="img-fluid member-photo" alt="Passport style picture of Seamus Madeup" />
                     </td>
                     <td>
                         <p>Seamus Madeup</p>
@@ -126,14 +131,14 @@
                         socialist themes. He is currently employed as a translator for a local publishing house.
                     </td>
                     <td>
-                        <span><a href="mailto: email@email.com" target="_blank"><i class="bi bi-envelope"></i></a></span>
+                        <span><a href="mailto:email@email.com" target="_blank"><i class="bi bi-envelope"></i></a></span>
                         <span class="mx-2"><a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></span>
                     </td>
                   </tr>
 
                   <tr>
                     <td>
-                        <img src="/img/members/2.png" class="img-fluid member-photo" />
+                        <img src="/img/members/2.png" class="img-fluid member-photo" alt="Passport style picture of Billy Flanagan"/>
                     </td>
                     <td>
                         <p>Billy Flanagan</p>
@@ -142,14 +147,14 @@
                         As a retired former Garda member, Billy spends his time, in his Meath house, writing about Ireland and the Troubles, with a deep and emotional approach.
                     </td>
                     <td>
-                        <span><a href="mailto: email@email.com" target="_blank"><i class="bi bi-envelope"></i></a></span>
+                        <span><a href="mailto:email@email.com" target="_blank"><i class="bi bi-envelope"></i></a></span>
                         <span class="mx-2"><a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></span>
                     </td>
                   </tr>
 
                   <tr>
                     <td>
-                        <img src="/img/members/3.png" class="img-fluid member-photo" />
+                        <img src="/img/members/3.png" class="img-fluid member-photo" alt="Passport style picture of Veonardo La Dinci"/>
                     </td>
                     <td>
                         <p>Veonardo La Dinci</p>
@@ -159,14 +164,14 @@
                         has spent most of his time inventing, writing and creating tools and devices for, in his own words, "advancment of humanity". 
                     </td>
                     <td>
-                        <span><a href="mailto: email@email.com" target="_blank"><i class="bi bi-envelope"></i></a></span>
+                        <span><a href="mailto:email@email.com" target="_blank"><i class="bi bi-envelope"></i></a></span>
                         <span class="mx-2"><a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></span>
                     </td>
                   </tr>
 
                   <tr>
                     <td>
-                        <img src="/img/members/4.png" class="img-fluid member-photo" />
+                        <img src="/img/members/4.png" class="img-fluid member-photo" alt="Passport style picture of Nicola McTesla"/>
                     </td>
                     <td>
                         <p>Nicola McTesla</p>
@@ -175,7 +180,7 @@
                         Nicola was born in Serbia and migrated to Ireland early in the 20th century. A well educated engineer, his works focus on pigeons.
                     </td>
                     <td>
-                        <span><a href="mailto: email@email.com" target="_blank"><i class="bi bi-envelope"></i></a></span>
+                        <span><a href="mailto:email@email.com" target="_blank"><i class="bi bi-envelope"></i></a></span>
                         <span class="mx-2"><a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></span>
                     </td>
                   </tr>
@@ -191,11 +196,11 @@
                 </button>
                 
                 <!-- Modal -->
-                <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="members-modal-title" aria-hidden="true">
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h5 id="members-modal-title" class="modal-title modal-text" id="modalLabel">How to become a member</h5>
+                        <h5 id="members-modal-title" class="modal-title modal-text">How to become a member</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -205,7 +210,7 @@
                         </div>
                         <div class="modal-footer">
                         <button type="button" class="custom-button p-3" data-bs-dismiss="modal">Close</button>
-                        <a href="/submit.html" target="_blank"><button type="button" class="custom-button p-3">Submit literature</button></a>
+                        <button type="button" class="custom-button p-3" onclick="redirectSubmit()">Submit literature</button>
                         </div>
                     </div>
                     </div>

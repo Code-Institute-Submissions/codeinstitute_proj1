@@ -12,25 +12,25 @@
 }
 
 
-#mattermost-button {
+.mattermost-button {
     background-color: #1e325c;
     color: white;
     transition:  0.18s ease-in-out
 }
 
-#mattermost-button:hover {
+.mattermost-button:hover {
     transform: scale(1.2);
     background-color: white;
     color: #1e325c;
 }
 
-#facebook-button {
+.facebook-button {
     background-color: #4267B2;
     color: white;
     transition:  0.1s ease-in-out
 }
 
-#facebook-button:hover {
+.facebook-button:hover {
     background-color: white;
     color: var(--blue);
     transform: scale(1.2)

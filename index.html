@@ -1,222 +1,287 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-        <!-- Bootstrap Icons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
-        <!-- Sitewide custom CSS -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/navbar.css">
+    <!-- Sitewide custom CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
 
-        <!-- Page specific CSS -->
-        <link rel="stylesheet" href="css/landing-page.css">
+    <!-- Page specific CSS -->
+    <link rel="stylesheet" href="css/landing-page.css">
 
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
-        <title>Inkwell Shards | Dublin Writer's Club</title>
-    </head>
+    <title>Inkwell Shards | Dublin Writer's Club</title>
+    <!-- Page validated with W3.org validator on 24/05/2022, no errors or warnings found -->
+</head>
 
-    <body class="container-fluid px-0 col-sm-11 col-md-10 col-xl-9 col-xxl-8">
+<body class="container-fluid px-0 col-sm-11 col-md-10 col-xl-9 col-xxl-8">
 
-        <!-- Bootstrap Navigation bar -->
-        <nav id="navigation-bar" class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
-        
-                <a class="navbar-brand m-2 my-auto" href="/index.html">
-                    <img src="/img/logo.png" id="navbar-logo"/> <span class="d-none d-md-inline">Inkwell Shards</span>
-                </a>
-                <!-- Social buttons, visible only on smaller sizes -->
-                <ul class="navbar-nav d-xxl-none">
-                    <li class="nav-item">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <button id="mattermost-button" class="btn mx-3 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button>
-                        <button id="facebook-button" class="btn me-4 px-3" onclick="redirect()"><i class="bi bi-facebook"></i></button>
+    <!-- Bootstrap Navigation bar -->
+    <nav id="navigation-bar" class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
 
-                    </li>
-                </ul>
+        <a class="navbar-brand m-2 my-auto" href="/index.html">
+            <img src="/img/logo.png" id="navbar-logo" alt="Blue logo on white background" /> <span
+                class="d-none d-md-inline">Inkwell Shards</span>
+        </a>
+        <!-- Social buttons, visible only on smaller sizes -->
+        <ul class="navbar-nav d-xxl-none">
+            <li class="nav-item">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Here we use mattermost-button and facebook-button as classes rather than IDs because we 
+                        are using these elements twice and we don't want any duplicate ID elements -->
+                <button class="mattermost-button btn mx-3 px-3" onclick="redirect()"><i
+                        class="bi bi-slack"></i></button>
+                <button class="facebook-button btn me-4 px-3" onclick="redirect()"><i
+                        class="bi bi-facebook"></i></button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto d-flex align-items-center">
-                    <li class="nav-item active"><a class="nav-link" href="/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/members.html">Members</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/works.html">Notable Works</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/shop.html">Books for sale</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/submit.html">Submit literature</a></li>
-                </ul>
+            </li>
+        </ul>
 
-                <!-- Social buttons for the large navbar, visible only on large displays -->
-                <ul class="navbar-nav mx-2 d-none d-xxl-flex">
-                    <li class="nav-item"><button id="mattermost-button" class="btn mx-2 px-3" onclick="redirect()"><i class="bi bi-slack"></i></button></li>
-                    <li class="nav-item"><button id="facebook-button" class="btn mx-2 px-3" onclick="redirect()"><i class="bi bi-facebook"></i></button></li>
-                </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto d-flex align-items-center">
+                <li class="nav-item active"><a class="nav-link" href="/index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/members.html">Members</a></li>
+                <li class="nav-item"><a class="nav-link" href="/works.html">Notable Works</a></li>
+                <li class="nav-item"><a class="nav-link" href="/events.html">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="/shop.html">Books for sale</a></li>
+                <li class="nav-item"><a class="nav-link" href="/submit.html">Submit literature</a></li>
+            </ul>
 
-              </ul>
-            </div>
-          </nav>
-        
-        <!-- The header of the page, where a description is listed, together with an "announcements"
+            <!-- Social buttons for the large navbar, visible only on large displays -->
+            <ul class="navbar-nav mx-2 d-none d-xxl-flex">
+                <li class="nav-item"><button class="mattermost-button btn mx-2 px-3" onclick="redirect()"><i
+                            class="bi bi-slack"></i></button></li>
+                <li class="nav-item"><button class="facebook-button btn mx-2 px-3" onclick="redirect()"><i
+                            class="bi bi-facebook"></i></button></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- The header of the page, where a description is listed, together with an "announcements"
         board. The links here will lead the user to a booking page where they can reserve a seat at
         the next club's meeting -->
-        <header class="container px-auto px-md-4 px-xl-5">
-            <div class="row">
+    <header class="container px-auto px-md-4 px-xl-5">
+        <div class="row">
 
-                <div class="col-12 col-md-8 col-xl-9 mb-3 my-auto mx-auto">
-                    <h1>Inkwell Shards</h1>
-                    <h6>Dublin literary club, opened to all new, talented and interested writers living in the Dublin area. We accept submission 
-                        of all kinds, from poetry, to drama, to TikToks. Meeting monthly, in person and via Zoom <span><i class="bi bi-camera-video"></i></span></h6>
-                </div>
-
-                <div id="announcement-top" class="col-8 col-sm-6 col-md-4 col-xl-3 my-auto p-1 mx-auto bg-dark text-center">
-                    <small>Next meeting:</small>
-                    <small>28th of June, 2022 | 18:00</small><br>
-                    <small>RDS Building, D08 RX84</small><br>
-                    <small><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Book here!</a> | </small><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="align-middle"><i class="bi bi-camera-video"></i></a>
-                </div> 
-
+            <div class="col-12 col-md-8 col-xl-9 mb-3 my-auto mx-auto">
+                <h1>Inkwell Shards</h1>
+                <h6>Dublin literary club, opened to all new, talented and interested writers living in the Dublin area.
+                    We accept submission
+                    of all kinds, from poetry, to drama, to TikToks. Meeting monthly, in person and via Zoom <span><i
+                            class="bi bi-camera-video"></i></span></h6>
             </div>
-        </header>
 
-        <hr> 
+            <div id="announcement-top" class="col-8 col-sm-6 col-md-4 col-xl-3 my-auto p-1 mx-auto bg-dark text-center">
+                <small>Next meeting:</small>
+                <small>28th of June, 2022 | 18:00</small><br>
+                <small>RDS Building, D08 RX84</small><br>
+                <small><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Book here!</a> | </small><a
+                    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="align-middle"><i
+                        class="bi bi-camera-video"></i></a>
+            </div>
 
-        <section id="main-landing-section" class="container px-auto px-md-4 px-xl-5">
+        </div>
+    </header>
 
-            <!-- A quote about the power of literature -->
-            <div class="row">
-                <div class="col-12 col-xl-4 mb-xl-5 me-auto">
-                    <img src="/img/sbeckett.jpg" class="img-fluid px-xl-5 rounded mx-auto">
-                </div>
-                <div class="col-12 col-xl-8 mt-3 mt-xl-auto my-auto">
-                    <figure>
-                        <blockquote class="blockquote mx-auto">
-                          <p class="text-center my-auto">
-                            “Let us do something, while we have the chance! It is not every day that we are needed. Not indeed that we personally are needed. 
-                            Others would meet the case equally well, if not better. To all mankind they were addressed, those cries for help still ringing in our 
-                            ears! But at this place, at this moment of time, all mankind is us, whether we like it or not. Let us make the most of it, before it is 
-                            too late! Let us represent worthily for one the foul brood to which a cruel fate consigned us! What do you say? It is true that when with 
-                            folded arms we weigh the pros and cons we are no less a credit to our species. The tiger bounds to the help of his congeners without the 
-                            least reflexion, or else he slinks away into the depths of the thickets. But that is not the question. What are we doing here, that is the 
-                            question. And we are blessed in this, that we happen to know the answer. Yes, in the immense confusion one thing alone is clear. 
+    <hr>
+
+    <section id="main-landing-section" class="container px-auto px-md-4 px-xl-5">
+        <h2 class="visually-hidden">The main section of the landing page, with a Samuel Beckett quote and three buttons
+            offering the option to
+            find out more about the Inkwell Shards club
+        </h2>
+
+        <!-- A quote about the power of literature -->
+        <div class="row">
+            <div class="col-12 col-xl-4 mb-xl-5 me-auto">
+                <img src="/img/sbeckett.jpg" class="img-fluid px-xl-5 rounded mx-auto"
+                    alt="Drawn portrait of Samuel Beckett">
+            </div>
+            <div class="col-12 col-xl-8 mt-3 mt-xl-auto my-auto">
+                <figure>
+                    <blockquote class="blockquote mx-auto">
+                        <p class="text-center my-auto">
+                            “Let us do something, while we have the chance! It is not every day that we are needed. Not
+                            indeed that we personally are needed.
+                            Others would meet the case equally well, if not better. To all mankind they were addressed,
+                            those cries for help still ringing in our
+                            ears! But at this place, at this moment of time, all mankind is us, whether we like it or
+                            not. Let us make the most of it, before it is
+                            too late! Let us represent worthily for one the foul brood to which a cruel fate consigned
+                            us! What do you say? It is true that when with
+                            folded arms we weigh the pros and cons we are no less a credit to our species. The tiger
+                            bounds to the help of his congeners without the
+                            least reflexion, or else he slinks away into the depths of the thickets. But that is not the
+                            question. What are we doing here, that is the
+                            question. And we are blessed in this, that we happen to know the answer. Yes, in the immense
+                            confusion one thing alone is clear.
                             We are waiting for Godot to come -- ”
-                            </p>
-                        </blockquote>
-                        <figcaption class="blockquote-footer text-center mt-1">
-                          Samuel Beckett <cite title="Waiting for Godot">"Waiting for Godot"</cite>
-                        </figcaption>
-                      </figure>
+                        </p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer text-center mt-1">
+                        Samuel Beckett <cite title="Waiting for Godot">"Waiting for Godot"</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- A row with a brief introduction / history / purpose and a side column with the latest news -->
+        <div class="row mt-xl-5">
+
+            <div class="col-12 col-xl-9">
+
+                <div class="row justify-content-between mb-4 mx-auto">
+                    <button type="button" id="intro-button"
+                        class="col-12 col-xl-4 p-3 my-2 my-xl-auto custom-button descriptor-buttons">Introduction</button>
+                    <button type="button" id="history-button"
+                        class="col-12 col-xl-4 p-3 my-2 my-xl-auto custom-button descriptor-buttons">Short
+                        History</button>
+                    <button type="button" id="what-we-do-button"
+                        class="col-12 col-xl-4 p-3 my-2 my-xl-auto custom-button descriptor-buttons">What We Do</button>
+                </div>
+
+                <div id="intro-wrapper" class="d-block justify-content-center col-12 mx-auto">
+                    <p>
+                        We are a Dublin based literary club with a largely Irish audience but of international appeal.
+                        <br><br>
+                        Our core philosophy is to seek to explore the issues of contemporary novels and literature, and
+                        how to use them to present the issues,
+                        in a manner appropriate to our audience, of our time and place. We also want to explore novel
+                        formats, culture as well as to explore novel
+                        trends, such as the changing popularity of print and television, the growing influence of the
+                        digital age. We believe that literary work,
+                        both on our digital platform and in print, will make a significant difference to Ireland's
+                        development and future. We intend to promote and
+                        celebrate our literary heritage. Our work in Ireland has been praised internationally. We hope
+                        that with our international reach and the right
+                        encouragement we can do just that.
+                        <br><br>
+                        Please walk around our website for more information and to contact us.
+                    </p>
+                    <small>Text generated at <a href="https://deepai.org/machine-learning-model/text-generator"
+                            target="_blank">deepai.org</a></small><br>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="mt-4 col-12 col-xl-12 mx-auto"></iframe>
+                </div>
+
+                <div id="history-wrapper" class="d-none justify-content-center col-12 mx-auto align-items-center">
+                    <p>
+                        Our club has been formed in 1989, by Robert McDean, in Dublin and has since helped over 40
+                        writers to publish their works and reach an international
+                        audience. Our original motto has been 'in love the best', and in 2007 we are finally announcing
+                        our decision to run the club and help to continue to grow our community.
+                        <br><br>
+                        In 2009 we have received rights to use one of the large conference rooms located at the Royal
+                        Dublin Society and ever since, our club has held its meeting on the premises.
+                        <br><br>
+                        In 2014 we have been awarded the Irish Cultural Award for our long and enriching activity,
+                        together with the publishing, in the same year, of more than 12 books in Irish language.
+                        "While the club is now in the process of going through a period of 'turning things around', it
+                        remains to be seen how we can improve the Club and help ensure
+                        that it remains up to the demands of its members." Mr McDean, former chief executive of The
+                        O'Clock News, was one of the founding members of the Club.
+                    </p>
+                    <small>Text (partially) generated at <a
+                            href="https://deepai.org/machine-learning-model/text-generator"
+                            target="_blank">deepai.org</a></small>
+
+                </div>
+
+                <div id="what-we-do-wrapper" class="d-none justify-content-center col-12 mx-auto align-items-center">
+                    <p>
+                        One of our most important activities is helping young writers perfect their style and reach a
+                        wide audience. You can send us your works through the website form,
+                        on e-mail or though our Social Media platforms. Once we receive something that we find of value
+                        one of our members will contact you to talk more.
+                        We take all of these steps to reach out to you with a message of hope and confidence. You will
+                        get a confirmation message from me when you send out the work in your
+                        newsletter. It will show you that we are a great work of art and that we can fulfill an
+                        important goal of delivering your work into a market that is open and accessible
+                        to everyone. Your information has been used for over a year.
+                        <br><br>
+                        We ask for your understanding that if you want to continue on with your work, you have to feel
+                        free to email me and we will work together to support you and your family.
+                        You should pay attention to the fact that our message is coming from our readers. They will know
+                        what we are doing because you did some research on our site before you did.
+                        They will know who this work is from one of our members' friends who has a similar view on art.
+                        So, you will have a chance to be a part of a creative success story,
+                        as soon as you submit your work. Thank you!
+
+                        Thank you all for your support and we hope that you have a fruitful future.
+                    </p>
+                    <small>Text (partially) generated at <a
+                            href="https://deepai.org/machine-learning-model/text-generator"
+                            target="_blank">deepai.org</a></small>
+
                 </div>
             </div>
 
-            <!-- A row with a brief introduction / history / purpose and a side column with the latest news -->
-            <div class="row mt-xl-5">
+            <aside class="col-12 col-xl-3 align-items-center mt-5 mt-xl-auto">
+                <h2 class="text-center border rounded py-2">Latest News</h2>
+                <h5 class="mt-3">William Butler Yeats awarded Nobel Prize in Literature</h5>
+                <small>10th of December, 1923</small>
+                <p>"(...)for his always inspired poetry, which in a highly artistic form gives expression to the spirit
+                    of
+                    a whole nation."</p>
+                <hr>
+                <h5>George Bernard Shaw awarded Nobel Prize in Literature</h5>
+                <small>10th of December, 1925</small>
+                <p>"(...)for his work which is marked by both idealism and humanity, its stimulating satire often being
+                    infused with a singular poetic beauty."</p>
+                <hr>
+                <h5>Samuel Beckett awarded Nobel Prize in Literature</h5>
+                <small>10th of December, 1969</small>
+                <p>"(...)for his writing, which - in new forms for the novel and drama - in the destitution of modern
+                    man acquires its elevation."</p>
+                <hr>
+                <h5>Seamus Heaney awarded Nobel Prize in Literature</h5>
+                <small>10th of December, 1995</small>
+                <p>"(...)for works of lyrical beauty and ethical depth, which exalt everyday miracles and the living
+                    past."</p>
+            </aside>
 
-                <div class="col-12 col-xl-9">
+        </div>
 
-                    <div class="row justify-content-between mb-4 mx-auto">
-                        <button id="intro-button" class="col-12 col-xl-4 p-3 my-2 my-xl-auto custom-button descriptor-buttons">Introduction</button>
-                        <button id="history-button" class="col-12 col-xl-4 p-3 my-2 my-xl-auto custom-button descriptor-buttons">Short History</button>
-                        <button id="what-we-do-button" class="col-12 col-xl-4 p-3 my-2 my-xl-auto custom-button descriptor-buttons">What We Do</button>
-                    </div>
+    </section>
 
-                    <div id="intro-wrapper" class="d-block justify-content-center col-12 mx-auto">
-                        <p>
-                            We are a Dublin based literary club with a largely Irish audience but of international appeal.  
-                            <br><br>
-                            Our core philosophy is to seek to explore the issues of contemporary novels and literature, and how to use them to present the issues, 
-                            in a manner appropriate to our audience, of our time and place.  We also want to explore novel formats, culture as well as to explore novel 
-                            trends, such as the changing popularity of print and television, the growing influence of the digital age. We believe that literary work, 
-                            both on our digital platform and in print, will make a significant difference to Ireland's development and future. We intend to promote and 
-                            celebrate our literary heritage.  Our work in Ireland has been praised internationally.  We hope that with our international reach and the right 
-                            encouragement we can do just that.
-                            <br><br>
-                            Please walk around our website for more information and to contact us. 
-                        </p>
-                        <small>Text generated at <a href="https://deepai.org/machine-learning-model/text-generator" target="_blank">deepai.org</a></small>
-                    </div>
-
-                    <div id="history-wrapper" class="d-none justify-content-center col-12 mx-auto align-items-center">
-                        <p>
-                            Our club has been formed in 1989, by Robert McDean, in Dublin and has since helped over 40 writers to publish their works and reach an international 
-                            audience. Our original motto has been 'in love the best', and in 2007 we are finally announcing our decision to run the club and help to continue to grow our community.
-                            <br><br>
-                            In 2009 we have received rights to use one of the large conference rooms located at the Royal Dublin Society and ever since, our club has held its meeting on the premises.
-                            <br><br>
-                            In 2014 we have been awarded the Irish Cultural Award for our long and enriching activity, together with the publishing, in the same year, of more than 12 books in Irish language.
-                            "While the club is now in the process of going through a period of 'turning things around', it remains to be seen how we can improve the Club and help ensure 
-                            that it remains up to the demands of its members." Mr McDean, former chief executive of The O'Clock News, was one of the founding members of the Club.    
-                        </p>
-                        <small>Text (partially) generated at <a href="https://deepai.org/machine-learning-model/text-generator" target="_blank">deepai.org</a></small>
-
-                    </div>
-
-                    <div id="what-we-do-wrapper" class="d-none justify-content-center col-12 mx-auto align-items-center">
-                        <p>
-                            One of our most important activities is helping young writers perfect their style and reach a wide audience. You can send us your works through the website form, 
-                            on e-mail or though our Social Media platforms. Once we receive something that we find of value one of our members will contact you to talk more. 
-                            We take all of these steps to reach out to you with a message of hope and confidence. You will get a confirmation message from me when you send out the work in your 
-                            newsletter. It will show you that we are a great work of art and that we can fulfill an important goal of delivering your work into a market that is open and accessible 
-                            to everyone. Your information has been used for over a year.
-                            <br><br>
-                            We ask for your understanding that if you want to continue on with your work, you have to feel free to email me and we will work together to support you and your family.
-                            You should pay attention to the fact that our message is coming from our readers. They will know what we are doing because you did some research on our site before you did. 
-                            They will know who this work is from one of our members' friends who has a similar view on art. So, you will have a chance to be a part of a creative success story, 
-                            as soon as you submit your work. Thank you!
-                            
-                            Thank you all for your support and we hope that you have a fruitful future.    
-                        </p>
-                        <small>Text (partially) generated at <a href="https://deepai.org/machine-learning-model/text-generator" target="_blank">deepai.org</a></small>
-
-                    </div>
-                </div>
-
-                <aside class="col-12 col-xl-3 align-items-center mt-5 mt-xl-auto">
-                    <h2 class="text-center border rounded py-2">Latest News</h2>
-                    <h5 class="mt-3">William Butler Yeats awarded Nobel Prize in Literature</h6>
-                    <small>10th of December, 1923</small>
-                    <p>"(...)for his always inspired poetry, which in a highly artistic form gives expression to the spirit of 
-                        a whole nation."</p>
-                    <hr>
-                    <h5>George Bernard Shaw awarded Nobel Prize in Literature</h5>
-                    <small>10th of December, 1925</small>
-                    <p>"(...)for his work which is marked by both idealism and humanity, its stimulating satire often being infused with a singular poetic beauty."</p>
-                    <hr>
-                    <h5>Samuel Beckett awarded Nobel Prize in Literature</h5>
-                    <small>10th of December, 1969</small>
-                    <p>"(...)for his writing, which - in new forms for the novel and drama - in the destitution of modern man acquires its elevation."</p>
-                    <hr>
-                    <h5>Seamus Heaney awarded Nobel Prize in Literature</h5>
-                    <small>10th of December, 1995</small>
-                    <p>"(...)for works of lyrical beauty and ethical depth, which exalt everyday miracles and the living past."</p>
-                </aside>
-
-            </div>
-
-        </section>
-
-        <footer id="main-footer" class="col-12 container-fluid sticky-bottom">
-            <p class="text-center my-auto py-3">Inkwell Shards | All rights reserved
-                <br><span class="small">contact@inkwelldublin.ie</span>
-            </p>
-        </footer>
+    <footer id="main-footer" class="col-12 container-fluid sticky-bottom">
+        <p class="text-center my-auto py-3">Inkwell Shards | All rights reserved
+            <br><span class="small">contact@inkwelldublin.ie</span>
+        </p>
+    </footer>
 
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
- 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
     <!-- Custom scripts -->
     <script src="/js/landing-page.js"></script>
     <script src="/js/main.js"></script>
 </body>
+
 </html>

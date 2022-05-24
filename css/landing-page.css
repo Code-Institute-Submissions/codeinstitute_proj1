@@ -22,9 +22,6 @@ A new video HTML element will need to be added too */
 
 }
 
-
-
-
 /* Media query to remove the fixed width on the buttons at widths under 700px */
 @media only screen and (min-width: 700px) {
     .descriptor-buttons {
